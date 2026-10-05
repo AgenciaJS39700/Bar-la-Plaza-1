@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tortillas artesanales en Castro Urdiales | Bar La Plaza</title>
+  <meta name="description" content="Bar La Plaza en la Plaza del Mercado de Castro Urdiales: pinchos de tortilla, desayunos y tortillas enteras por encargo. Pide por WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7A4A22">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bar La Plaza | Tortillas artesanales en Castro Urdiales">
+  <meta property="og:description" content="Pinchos, desayunos y tortillas enteras por encargo en la Plaza del Mercado.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=630&q=70">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: { 50: "#FFFBF4", 100: "#FBF1E0", 200: "#F3E1C3" },
+            toast: { 400: "#C98A4B", 500: "#B7743A", 600: "#9A5E2B", 700: "#7A4A22", 800: "#5A3519", 900: "#3B2616" },
+            wa: { DEFAULT: "#168A45", dark: "#11743A" }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            display: ["Playfair Display", "Georgia", "serif"]
+          },
+          borderRadius: { card: "1rem" }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 5rem; }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Restaurant", "LocalBusiness"],
+    "@id": "#negocio",
+    "name": "Bar La Plaza",
+    "description": "Bar en la Plaza del Mercado de Castro Urdiales especializado en pinchos y tortillas artesanales de patata. Desayunos y tortillas enteras por encargo.",
+    "servesCuisine": ["Española", "Tortillas", "Pinchos", "Desayunos"],
+    "telephone": "+34628224719",
+    "email": "agencia39700@gmail.com",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plaza del Mercado",
+      "addressLocality": "Castro Urdiales",
+      "addressRegion": "Cantabria",
+      "postalCode": "39700",
+      "addressCountry": "ES"
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "areaServed": { "@type": "City", "name": "Castro Urdiales" },
+    "currenciesAccepted": "EUR",
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/34628224719",
+        "actionPlatform": ["http://schema.org/MobileWebPlatform", "http://schema.org/DesktopWebPlatform"]
+      },
+      "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-cream-50 pb-20 font-sans text-toast-900 antialiased md:pb-0">
+  <a href="#carta" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-4 focus:py-2">Saltar a la carta</a>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-toast-900/10 bg-cream-50/95 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-2" aria-label="Bar La Plaza, ir al inicio">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-toast-700 text-cream-50">
+          <i data-lucide="utensils" class="h-5 w-5" aria-hidden="true"></i>
+        </span>
+        <span class="font-display text-xl font-bold leading-none tracking-tight sm:text-2xl">Bar <span class="text-toast-600">La Plaza</span></span>
+      </a>
+
+      <nav aria-label="Principal" class="hidden items-center gap-1 md:flex">
+        <a href="#inicio" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Inicio</a>
+        <a href="#carta" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Carta</a>
+        <a href="#encargos" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Encargos</a>
+        <a href="#ubicacion" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <span data-estado class="inline-flex items-center gap-2 rounded-full border border-toast-900/10 bg-white px-3 py-1.5 text-xs font-semibold" role="status" aria-live="polite">
+          <span data-estado-punto class="h-2.5 w-2.5 rounded-full bg-gray-400"></span>
+          <span data-estado-texto>Comprobando…</span>
+        </span>
+        <button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú"
+                class="flex h-11 w-11 items-center justify-center rounded-full hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 md:hidden">
+          <i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav id="menu-movil" aria-label="Menú móvil" class="hidden border-t border-toast-900/10 bg-cream-50 md:hidden">
+      <ul class="mx-auto max-w-6xl space-y-1 px-4 py-3">
+        <li><a href="#inicio" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Inicio</a></li>
+        <li><a href="#carta" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Carta</a></li>
+        <li><a href="#encargos" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Encargos</a></li>
+        <li><a href="#ubicacion" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="relative isolate overflow-hidden bg-gradient-to-br from-toast-900 via-toast-800 to-toast-700">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=70"
+           alt="Costa cantábrica en Castro Urdiales" width="1600" height="1067"
+           class="absolute inset-0 -z-20 h-full w-full object-cover" fetchpriority="high"
+           onerror="this.style.display='none'">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-toast-900/85 via-toast-900/75 to-toast-900/90" aria-hidden="true"></div>
+
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+        <div class="max-w-2xl space-y-6 text-cream-50">
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide ring-1 ring-white/20">
+            <i data-lucide="map-pin" class="h-3.5 w-3.5" aria-hidden="true"></i> Plaza del Mercado · Castro Urdiales
+          </p>
+          <h1 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            Las mejores tortillas artesanales en la Plaza del Mercado
+          </h1>
+          <p class="text-base leading-relaxed text-cream-100/90 sm:text-lg">
+            Desayunos, pinchos recién hechos y tortillas enteras por encargo en Castro Urdiales.
+          </p>
+          <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
+            <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar"
+               target="_blank" rel="noopener" data-cta="whatsapp_encargo"
+               class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-wa px-6 py-3.5 text-base font-semibold text-white shadow-lg transition hover:bg-wa-dark active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none sm:w-auto">
+              <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> Encargar por WhatsApp
+            </a>
+            <a href="#carta" data-cta="ver_carta"
+               class="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border-2 border-cream-50/80 px-6 py-3.5 text-base font-semibold text-cream-50 transition hover:bg-cream-50 hover:text-toast-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none sm:w-auto">
+              Ver la carta completa
+            </a>
+          </div>
+          <p class="flex items-center gap-2 text-sm text-cream-100/80">
+            <i data-lucide="clock" class="h-4 w-4" aria-hidden="true"></i> Lunes a sábado, de 08:00 a 14:00 · Domingos cerrado
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section id="carta" class="py-12 sm:py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-wide text-toast-600">Nuestra carta</p>
+          <h2 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Tortillas, desayunos y bebidas</h2>
+          <p class="mt-3 text-base leading-relaxed text-toast-900/75">Elige tu pincho en barra o encarga la tortilla entera para llevar.</p>
+        </div>
+
+        <div role="tablist" aria-label="Categorías de la carta" id="tabs"
+             class="reveal mt-8 flex gap-2 overflow-x-auto pb-2 sm:justify-center">
+          <button role="tab" type="button" data-tab="tortillas" aria-selected="true" aria-controls="panel-carta"
+                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
+            <i data-lucide="egg-fried" class="h-4 w-4" aria-hidden="true"></i> Tortillas estrella
+          </button>
+          <button role="tab" type="button" data-tab="desayunos" aria-selected="false" aria-controls="panel-carta"
+                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
+            <i data-lucide="coffee" class="h-4 w-4" aria-hidden="true"></i> Cafés y desayunos
+          </button>
+          <button role="tab" type="button" data-tab="bebidas" aria-selected="false" aria-controls="panel-carta"
+                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
+            <i data-lucide="beer" class="h-4 w-4" aria-hidden="true"></i> Refrescos y cervezas
+          </button>
+        </div>
+
+        <div id="panel-carta" role="tabpanel" tabindex="0" aria-live="polite"
+             class="mt-6 grid grid-cols-1 gap-4 focus:outline-none sm:grid-cols-2 lg:grid-cols-3"></div>
+
+        <p class="mt-8 text-center text-sm text-toast-900/60">
+          Precios con IVA incluido. Las tortillas contienen huevo. Si tienes alergias o intolerancias, consúltalo con el personal antes de pedir.
+        </p>
+      </div>
+    </section>
+
+    <!-- ENCARGOS -->
+    <section id="encargos" class="pb-12 sm:pb-16 lg:pb-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-toast-800 to-toast-700 text-cream-50 shadow-xl">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=70"
+               alt="" width="1200" height="800" loading="lazy" aria-hidden="true"
+               class="absolute inset-0 h-full w-full object-cover opacity-20" onerror="this.style.display='none'">
+          <div class="relative grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-[1.4fr_1fr] lg:p-14">
+            <div class="space-y-4">
+              <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide ring-1 ring-white/20">
+                <i data-lucide="party-popper" class="h-3.5 w-3.5" aria-hidden="true"></i> Tortillas enteras por encargo
+              </p>
+              <h2 class="font-display text-3xl font-semibold leading-tight sm:text-4xl">Para cumpleaños, eventos o un día de playa</h2>
+              <p class="text-base leading-relaxed text-cream-100/90">
+                Encarga tu tortilla entera y recógela en la Plaza del Mercado. Elige entre nuestras 8 variedades y cuéntanos para cuántas personas es.
+              </p>
+            </div>
+            <div class="space-y-3 lg:text-center">
+              <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20entera%20para%20un%20evento"
+                 target="_blank" rel="noopener" data-cta="whatsapp_encargo_banner"
+                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-wa px-6 py-3.5 text-base font-semibold text-white shadow-lg transition hover:bg-wa-dark active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none">
+                <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> Hacer un encargo
+              </a>
+              <p class="text-sm text-cream-100/80">Te confirmamos precio y hora de recogida por WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <section id="ubicacion" class="bg-cream-100 py-12 sm:py-16 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-wide text-toast-600">Dónde estamos</p>
+          <h2 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Ubicación y contacto</h2>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <article class="reveal space-y-5 rounded-card border border-toast-900/10 bg-white p-6 shadow-sm sm:p-8">
+            <ul class="space-y-5">
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="map-pin" class="h-5 w-5" aria-hidden="true"></i></span>
+                <div>
+                  <h3 class="font-semibold">Dirección</h3>
+                  <address class="not-italic text-toast-900/75">Plaza del Mercado<br>Castro Urdiales, Cantabria</address>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="clock" class="h-5 w-5" aria-hidden="true"></i></span>
+                <div>
+                  <h3 class="font-semibold">Horario</h3>
+                  <p class="text-toast-900/75">Lunes a sábado: 08:00 – 14:00<br>Domingos: cerrado</p>
+                  <p class="mt-1 text-sm font-semibold" data-estado-linea></p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="mail" class="h-5 w-5" aria-hidden="true"></i></span>
+                <div class="min-w-0">
+                  <h3 class="font-semibold">Email</h3>
+                  <a href="mailto:agencia39700@gmail.com" data-cta="email" class="break-all text-toast-700 underline underline-offset-2 hover:text-toast-900">agencia39700@gmail.com</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="flex flex-col gap-3 pt-2 sm:flex-row">
+              <a href="tel:+34628224719" data-cta="llamar"
+                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-toast-700 px-6 py-3 font-semibold text-white transition hover:bg-toast-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none sm:w-auto">
+                <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i> Llamar al 628 22 47 19
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales" target="_blank" rel="noopener" data-cta="como_llegar"
+                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full border-2 border-toast-600 px-6 py-3 font-semibold text-toast-700 transition hover:bg-cream-100 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none sm:w-auto">
+                <i data-lucide="navigation" class="h-5 w-5" aria-hidden="true"></i> Cómo llegar
+              </a>
+            </div>
+          </article>
+
+          <div class="reveal overflow-hidden rounded-card border border-toast-900/10 bg-white shadow-sm">
+            <iframe title="Mapa de Plaza del Mercado, Castro Urdiales"
+                    src="https://www.google.com/maps?q=Plaza+del+Mercado,+Castro+Urdiales&output=embed"
+                    width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="h-full min-h-[320px] w-full border-0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-toast-900 py-8 text-cream-100/80">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 text-center text-sm sm:px-6 lg:px-8">
+      <p class="font-display text-lg font-semibold text-cream-50">Bar La Plaza</p>
+      <p>Plaza del Mercado, Castro Urdiales · <a href="tel:+34628224719" class="underline underline-offset-2">628 22 47 19</a></p>
+      <p class="text-xs text-cream-100/60">&copy; <span id="anio"></span> Bar La Plaza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BARRA FIJA MÓVIL -->
+  <div class="fixed inset-x-0 bottom-0 z-50 flex gap-2 border-t border-toast-900/10 bg-white/95 p-3 backdrop-blur md:hidden">
+    <a href="tel:+34628224719" data-cta="llamar_barra"
+       class="flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full bg-toast-700 py-3 text-center font-semibold text-white">
+      <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i> Llamar
+    </a>
+    <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar" target="_blank" rel="noopener" data-cta="whatsapp_barra"
+       class="flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full bg-wa py-3 text-center font-semibold text-white">
+      <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> WhatsApp
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var WA = "34628224719";
+      function waLink(texto) {
+        return "https://wa.me/" + WA + "?text=" + encodeURIComponent(texto);
+      }
+
+      /* ---------- DATOS DE LA CARTA ---------- */
+      var TORTILLAS = [
+        { n: "Tradicional con cebolla pochada", d: "La clásica de siempre, jugosa y con cebolla bien pochada.", p: 3.20, e: 18.00 },
+        { n: "Con bonito y mayonesa", d: "Tortilla rellena de bonito del norte y un toque de mayonesa.", p: 3.50, e: 20.00 },
+        { n: "Jamón York y queso fundido", d: "Jamón York y queso fundido en su punto.", p: 3.50, e: 19.50 },
+        { n: "Queso de cabra y cebolla caramelizada", d: "Contraste de queso de cabra con cebolla caramelizada.", p: 3.80, e: 21.00 },
+        { n: "Chorizo a la sidra", d: "Chorizo cocinado a la sidra, con mucho sabor.", p: 3.50, e: 19.50 },
+        { n: "Espinacas y queso manchego", d: "Espinacas tiernas y queso manchego.", p: 3.50, e: 19.50 },
+        { n: "Paisana (verduras y taco de jamón)", d: "Verduras de temporada y tacos de jamón.", p: 3.50, e: 19.50 },
+        { n: "Especial Castro (rellena de alioli y lomo)", d: "Nuestra especial: rellena de alioli y lomo.", p: 3.80, e: 21.00 }
+      ];
+      var DESAYUNOS = [
+        { n: "Café solo", d: "Intenso y recién hecho.", i: "coffee" },
+        { n: "Café con leche", d: "El clásico para empezar la mañana.", i: "coffee" },
+        { n: "Cortado", d: "Café con un toque de leche.", i: "coffee" },
+        { n: "Zumo de naranja natural", d: "Exprimido al momento.", i: "citrus" },
+        { n: "Tostada con tomate y aceite", d: "Pan tostado con tomate y aceite de oliva.", i: "sandwich" }
+      ];
+      var BEBIDAS = [
+        { n: "Coca-Cola", d: "Refresco.", i: "cup-soda" },
+        { n: "Fanta", d: "Refresco.", i: "cup-soda" },
+        { n: "Aquarius", d: "Refresco.", i: "cup-soda" },
+        { n: "Cerveza de caña", d: "Bien fría, de grifo.", i: "beer" },
+        { n: "Agua", d: "Agua mineral.", i: "glass-water" }
+      ];
+
+      var eur = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
+
+      /* ---------- RENDER DE LA CARTA ---------- */
+      function cardTortilla(t) {
+        var msg = "Hola, quiero encargar una tortilla entera: " + t.n + ".";
+        return '<article class="flex flex-col rounded-card border border-toast-900/10 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md motion-reduce:transition-none">' +
+          '<h3 class="font-display text-lg font-semibold leading-snug">' + t.n + '</h3>' +
+          '<p class="mt-1 text-sm text-toast-900/70">' + t.d + '</p>' +
+          '<dl class="mt-4 grid grid-cols-2 gap-2 text-center">' +
+            '<div class="rounded-xl bg-cream-100 p-2"><dt class="text-xs font-semibold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-bold">' + eur.format(t.p) + '</dd></div>' +
+            '<div class="rounded-xl bg-cream-100 p-2"><dt class="text-xs font-semibold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-bold">' + eur.format(t.e) + '</dd></div>' +
+          '</dl>' +
+          '<a href="' + waLink(msg) + '" target="_blank" rel="noopener" data-cta="whatsapp_encargo_producto" ' +
+             'class="mt-4 inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-wa px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-wa-dark focus:outline-none focus-visible:ring-4 focus-visible:ring-wa/30 motion-reduce:transition-none">' +
+            '<i data-lucide="message-circle" class="h-4 w-4" aria-hidden="true"></i> Encargar entera</a>' +
+        '</article>';
+      }
+
+      function cardSimple(x) {
+        return '<article class="flex items-start gap-4 rounded-card border border-toast-900/10 bg-white p-5 shadow-sm">' +
+          '<span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="' + x.i + '" class="h-5 w-5" aria-hidden="true"></i></span>' +
+          '<div class="min-w-0"><h3 class="font-semibold">' + x.n + '</h3><p class="mt-0.5 text-sm text-toast-900/70">' + x.d + '</p>' +
+          '<p class="mt-2 text-xs font-semibold uppercase tracking-wide text-toast-600">Precio en barra</p></div>' +
+        '</article>';
+      }
+
+      var panel = document.getElementById("panel-carta");
+      var tabs = Array.prototype.slice.call(document.querySelectorAll("[data-tab]"));
+
+      function pintarPestana(btn, activa) {
+        btn.setAttribute("aria-selected", activa ? "true" : "false");
+        btn.className = "inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none " +
+          (activa ? "bg-toast-700 text-white shadow" : "bg-white text-toast-800 ring-1 ring-toast-900/10 hover:bg-cream-200");
+      }
+
+      function mostrar(cat) {
+        var html = "";
+        if (cat === "tortillas") html = TORTILLAS.map(cardTortilla).join("");
+        if (cat === "desayunos") html = DESAYUNOS.map(cardSimple).join("");
+        if (cat === "bebidas") html = BEBIDAS.map(cardSimple).join("");
+        panel.innerHTML = html;
+        tabs.forEach(function (b) { pintarPestana(b, b.dataset.tab === cat); });
+        if (window.lucide) window.lucide.createIcons();
+      }
+
+      tabs.forEach(function (b, i) {
+        b.addEventListener("click", function () { mostrar(b.dataset.tab); });
+        b.addEventListener("keydown", function (e) {
+          var j = null;
+          if (e.key === "ArrowRight") j = (i + 1) % tabs.length;
+          if (e.key === "ArrowLeft") j = (i - 1 + tabs.length) % tabs.length;
+          if (j !== null) { e.preventDefault(); tabs[j].focus(); mostrar(tabs[j].dataset.tab); }
+        });
+      });
+
+      /* ---------- ESTADO ABIERTO / CERRADO (Europe/Madrid) ---------- */
+      var DIAS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var APERTURA = 8 * 60, CIERRE = 14 * 60;
+
+      function calcularEstado() {
+        var partes = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Madrid", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false
+        }).formatToParts(new Date());
+        var v = {};
+        partes.forEach(function (p) { v[p.type] = p.value; });
+        var dia = DIAS.indexOf(v.weekday);
+        var min = (parseInt(v.hour, 10) % 24) * 60 + parseInt(v.minute, 10);
+        var laborable = dia !== 0;
+
+        if (laborable && min >= APERTURA && min < CIERRE) {
+          return { abierto: true, texto: "Abierto ahora", detalle: "Abierto ahora · cierra a las 14:00" };
+        }
+        var cuando;
+        if (laborable && min < APERTURA) cuando = "abre hoy a las 08:00";
+        else if (dia === 6) cuando = "abre el lunes a las 08:00";
+        else cuando = "abre mañana a las 08:00";
+        return { abierto: false, texto: "Cerrado", detalle: "Cerrado · " + cuando };
+      }
+
+      function actualizarEstado() {
+        var e = calcularEstado();
+        document.querySelectorAll("[data-estado]").forEach(function (el) {
+          el.querySelector("[data-estado-texto]").textContent = e.texto;
+          el.querySelector("[data-estado-punto]").className = "h-2.5 w-2.5 rounded-full " + (e.abierto ? "bg-green-600 animate-pulse motion-reduce:animate-none" : "bg-red-600");
+          el.className = "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold " +
+            (e.abierto ? "border-green-700/20 bg-green-50 text-green-800" : "border-red-700/20 bg-red-50 text-red-800");
+          el.title = e.detalle;
+        });
+        document.querySelectorAll("[data-estado-linea]").forEach(function (el) {
+          el.textContent = e.detalle;
+          el.className = "mt-1 text-sm font-semibold " + (e.abierto ? "text-green-800" : "text-red-800");
+        });
+      }
+
+      /* ---------- MENÚ MÓVIL ---------- */
+      var btn = document.getElementById("menu-btn");
+      var menu = document.getElementById("menu-movil");
+      function cerrarMenu() {
+        menu.classList.add("hidden");
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "Abrir menú");
+      }
+      btn.addEventListener("click", function () {
+        var abierto = btn.getAttribute("aria-expanded") === "true";
+        if (abierto) { cerrarMenu(); return; }
+        menu.classList.remove("hidden");
+        btn.setAttribute("aria-expanded", "true");
+        btn.setAttribute("aria-label", "Cerrar menú");
+      });
+      menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", cerrarMenu); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrarMenu(); });
+
+      /* ---------- ANIMACIÓN DE ENTRADA ---------- */
+      var reveals = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.12 });
+        reveals.forEach(function (el) { io.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add("is-visible"); });
+      }
+
+      /* ---------- ANALÍTICA DE CTAs (opcional) ---------- */
+      document.querySelectorAll("[data-cta]").forEach(function (el) {
+        el.addEventListener("click", function () {
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "cta_click", { cta: el.dataset.cta, pagina: location.pathname });
+          }
+        });
+      });
+
+      /* ---------- INICIO ---------- */
+      document.getElementById("anio").textContent = new Date().getFullYear();
+      mostrar("tortillas");
+      actualizarEstado();
+      setInterval(actualizarEstado, 60000);
+      window.addEventListener("load", function () { if (window.lucide) window.lucide.createIcons(); });
+    })();
+  </script>
+</body>
+</html>
