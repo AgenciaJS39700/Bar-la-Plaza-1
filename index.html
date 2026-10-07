@@ -1,495 +1,564 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tortillas artesanales en Castro Urdiales | Bar La Plaza</title>
-  <meta name="description" content="Bar La Plaza en la Plaza del Mercado de Castro Urdiales: pinchos de tortilla, desayunos y tortillas enteras por encargo. Pide por WhatsApp.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#7A4A22">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Bar La Plaza | Tortillas artesanales en Castro Urdiales">
-  <meta property="og:description" content="Pinchos, desayunos y tortillas enteras por encargo en la Plaza del Mercado.">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=630&q=70">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            cream: { 50: "#FFFBF4", 100: "#FBF1E0", 200: "#F3E1C3" },
-            toast: { 400: "#C98A4B", 500: "#B7743A", 600: "#9A5E2B", 700: "#7A4A22", 800: "#5A3519", 900: "#3B2616" },
-            wa: { DEFAULT: "#168A45", dark: "#11743A" }
-          },
-          fontFamily: {
-            sans: ["Inter", "system-ui", "sans-serif"],
-            display: ["Playfair Display", "Georgia", "serif"]
-          },
-          borderRadius: { card: "1rem" }
-        }
-      }
-    };
-  </script>
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
-
-  <style>
-    html { scroll-behavior: smooth; }
-    section[id] { scroll-margin-top: 5rem; }
-    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal.is-visible { opacity: 1; transform: none; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .reveal { opacity: 1; transform: none; transition: none; }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["Restaurant", "LocalBusiness"],
-    "@id": "#negocio",
-    "name": "Bar La Plaza",
-    "description": "Bar en la Plaza del Mercado de Castro Urdiales especializado en pinchos y tortillas artesanales de patata. Desayunos y tortillas enteras por encargo.",
-    "servesCuisine": ["Española", "Tortillas", "Pinchos", "Desayunos"],
-    "telephone": "+34628224719",
-    "email": "agencia39700@gmail.com",
-    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Plaza del Mercado",
-      "addressLocality": "Castro Urdiales",
-      "addressRegion": "Cantabria",
-      "postalCode": "39700",
-      "addressCountry": "ES"
-    },
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
-    "areaServed": { "@type": "City", "name": "Castro Urdiales" },
-    "currenciesAccepted": "EUR",
-    "potentialAction": {
-      "@type": "OrderAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://wa.me/34628224719",
-        "actionPlatform": ["http://schema.org/MobileWebPlatform", "http://schema.org/DesktopWebPlatform"]
-      },
-      "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
-    }
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tortillas artesanales y pinchos en Castro Urdiales | Bar La Plaza</title>
+<meta name="description" content="Bar La Plaza, en la Plaza del Mercado de Castro Urdiales: desayunos, pinchos de tortilla recién hechos y tortillas enteras por encargo. Pide por WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FFFBF4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B93A0A'/%3E%3Cellipse cx='32' cy='36' rx='22' ry='14' fill='%23F2C24F'/%3E%3Cellipse cx='32' cy='33' rx='22' ry='14' fill='%23F7D679'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bar La Plaza | Tortillas artesanales en Castro Urdiales">
+<meta property="og:description" content="Desayunos, pinchos de tortilla y tortillas enteras por encargo en la Plaza del Mercado.">
+<meta property="og:locale" content="es_ES">
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-x-0{left:0;right:0}.-left-2{left:-.5rem}.-right-2{right:-.5rem}.-right-24{right:-6rem}.-top-24{top:-6rem}.bottom-0{bottom:0}.bottom-10{bottom:2.5rem}.bottom-24{bottom:6rem}.left-1\/2{left:50%}.top-0{top:0}.top-6{top:1.5rem}.isolate{isolation:isolate}.-z-10{z-index:-10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mr-1{margin-right:.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1/1}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-16{height:4rem}.h-20{height:5rem}.h-28{height:7rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-32{height:8rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[28rem\]{height:28rem}.h-full{height:100%}.max-h-\[85vh\]{max-height:85vh}.min-h-\[1\.25rem\]{min-height:1.25rem}.min-h-\[340px\]{min-height:340px}.min-h-\[40px\]{min-height:40px}.min-h-\[44px\]{min-height:44px}.min-h-\[46px\]{min-height:46px}.min-h-\[50px\]{min-height:50px}.min-h-\[52px\]{min-height:52px}.min-h-\[54px\]{min-height:54px}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-16{width:4rem}.w-28{width:7rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-32{width:8rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-\[28rem\]{width:28rem}.w-\[calc\(100\%-2rem\)\]{width:calc(100% - 2rem)}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-6xl{max-width:72rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-none{flex:none}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.rotate-\[-6deg\]{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-\[-6deg\]{--tw-rotate:-6deg}.rotate-\[5deg\]{--tw-rotate:5deg}.rotate-\[5deg\],.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-2{row-gap:.5rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-toast-900\/10>:not([hidden])~:not([hidden]){border-color:rgba(59,38,22,.1)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.break-all{word-break:break-all}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-dashed{border-style:dashed}.border-brand-600{--tw-border-opacity:1;border-color:rgb(185 58 10/var(--tw-border-opacity,1))}.border-toast-900{--tw-border-opacity:1;border-color:rgb(59 38 22/var(--tw-border-opacity,1))}.border-toast-900\/10{border-color:rgba(59,38,22,.1)}.border-toast-900\/15{border-color:rgba(59,38,22,.15)}.border-toast-900\/20{border-color:rgba(59,38,22,.2)}.bg-amber-300{--tw-bg-opacity:1;background-color:rgb(252 211 77/var(--tw-bg-opacity,1))}.bg-brand-500\/15{background-color:rgba(217,72,15,.15)}.bg-brand-600{--tw-bg-opacity:1;background-color:rgb(185 58 10/var(--tw-bg-opacity,1))}.bg-cream-100{--tw-bg-opacity:1;background-color:rgb(251 241 224/var(--tw-bg-opacity,1))}.bg-cream-50{--tw-bg-opacity:1;background-color:rgb(255 251 244/var(--tw-bg-opacity,1))}.bg-cream-50\/95{background-color:rgba(255,251,244,.95)}.bg-toast-900{--tw-bg-opacity:1;background-color:rgb(59 38 22/var(--tw-bg-opacity,1))}.bg-wa{--tw-bg-opacity:1;background-color:rgb(22 138 69/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-cream-100{--tw-gradient-from:#fbf1e0 var(--tw-gradient-from-position);--tw-gradient-to:hsla(38,77%,93%,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cream-200{--tw-gradient-from:#f3e1c3 var(--tw-gradient-from-position);--tw-gradient-to:hsla(38,67%,86%,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-cream-100{--tw-gradient-to:#fbf1e0 var(--tw-gradient-to-position)}.to-cream-50{--tw-gradient-to:#fffbf4 var(--tw-gradient-to-position)}.p-0{padding:0}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.pb-2{padding-bottom:.5rem}.pb-24{padding-bottom:6rem}.pl-5{padding-left:1.25rem}.pr-3{padding-right:.75rem}.pt-3{padding-top:.75rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.font-serif{font-family:ui-serif,Georgia,Cambria,Times New Roman,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.not-italic{font-style:normal}.leading-\[1\.05\]{line-height:1.05}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.22em\]{letter-spacing:.22em}.tracking-wide{letter-spacing:.025em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.text-brand-600{--tw-text-opacity:1;color:rgb(185 58 10/var(--tw-text-opacity,1))}.text-brand-700{--tw-text-opacity:1;color:rgb(143 45 8/var(--tw-text-opacity,1))}.text-cream-200{--tw-text-opacity:1;color:rgb(243 225 195/var(--tw-text-opacity,1))}.text-cream-200\/70{color:hsla(38,67%,86%,.7)}.text-cream-50{--tw-text-opacity:1;color:rgb(255 251 244/var(--tw-text-opacity,1))}.text-toast-700{--tw-text-opacity:1;color:rgb(122 74 34/var(--tw-text-opacity,1))}.text-toast-800{--tw-text-opacity:1;color:rgb(90 53 25/var(--tw-text-opacity,1))}.text-toast-900{--tw-text-opacity:1;color:rgb(59 38 22/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.underline-offset-2{text-underline-offset:2px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-2xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-wa\/30{--tw-shadow-color:rgba(22,138,69,.3);--tw-shadow:var(--tw-shadow-colored)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-1,.ring-2{box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-amber-300{--tw-ring-opacity:1;--tw-ring-color:rgb(252 211 77/var(--tw-ring-opacity,1))}.ring-toast-900\/10{--tw-ring-color:rgba(59,38,22,.1)}.blur-2xl{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}html{scroll-behavior:smooth}section[id]{scroll-margin-top:5.5rem}.ic{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ic,.icf{flex:none}.icf{fill:currentColor}.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.reveal.is-visible{opacity:1;transform:none}.ill{width:100%;height:100%;overflow:visible;transition:transform .35s ease}.hero-ill:hover .ill,.prod:hover .ill{transform:translateY(-5px) rotate(-3deg) scale(1.06)}.steam path{transform-box:fill-box;transform-origin:center;opacity:0;animation:steam 2.8s ease-in-out infinite}@keyframes steam{0%{transform:translateY(8px);opacity:0}30%{opacity:.8}to{transform:translateY(-12px);opacity:0}}.bub{transform-box:fill-box;transform-origin:center;opacity:0;animation:rise 3.2s ease-in infinite}@keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}to{transform:translateY(-46px);opacity:0}}.float{animation:float 5s ease-in-out infinite}@keyframes float{0%,to{transform:translateY(0)}50%{transform:translateY(-10px)}}.tab{background:#fff;color:#5a3519;box-shadow:inset 0 0 0 1px rgba(59,38,22,.15);transition:background .2s,color .2s}.tab:hover{background:#fbf1e0}.tab[aria-selected=true]{background:#b93a0a;color:#fff;box-shadow:none}.estado{background:#fff;color:#5a3519;border:1px solid rgba(59,38,22,.15)}.estado-punto{width:.6rem;height:.6rem;border-radius:9999px;background:#9ca3af}.estado[data-abierto="1"]{background:#e8f5ec;color:#14532d;border-color:rgba(20,83,45,.25)}.estado[data-abierto="1"] .estado-punto{background:#16a34a;animation:pulse 1.8s ease-in-out infinite}.estado[data-abierto="0"]{background:#fdecea;color:#7f1d1d;border-color:rgba(127,29,29,.25)}.estado[data-abierto="0"] .estado-punto{background:#dc2626}@keyframes pulse{0%,to{box-shadow:0 0 0 0 rgba(22,163,74,.5)}50%{box-shadow:0 0 0 6px rgba(22,163,74,0)}}[data-estado-linea][data-abierto="1"]{color:#14532d}[data-estado-linea][data-abierto="0"]{color:#7f1d1d}tr[data-hoy="1"]{background:#fbf1e0;font-weight:700}dialog{margin:auto}dialog::backdrop{background:rgba(59,38,22,.7);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}.blob{background:radial-gradient(circle at 30% 30%,#f8c98e,transparent 60%),radial-gradient(circle at 70% 70%,#f3a66a,transparent 55%)}@keyframes tap{50%{transform:scale(.9)}}.animate-ping-once{animation:tap .3s}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.bub,.float,.steam path{animation:none}.steam path{opacity:.5}.ill,.prod{transition:none}}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-toast-900:hover{--tw-border-opacity:1;border-color:rgb(59 38 22/var(--tw-border-opacity,1))}.hover\:bg-brand-600:hover{--tw-bg-opacity:1;background-color:rgb(185 58 10/var(--tw-bg-opacity,1))}.hover\:bg-brand-700:hover{--tw-bg-opacity:1;background-color:rgb(143 45 8/var(--tw-bg-opacity,1))}.hover\:bg-cream-100:hover{--tw-bg-opacity:1;background-color:rgb(251 241 224/var(--tw-bg-opacity,1))}.hover\:bg-toast-800:hover{--tw-bg-opacity:1;background-color:rgb(90 53 25/var(--tw-bg-opacity,1))}.hover\:bg-toast-900:hover{--tw-bg-opacity:1;background-color:rgb(59 38 22/var(--tw-bg-opacity,1))}.hover\:bg-wa-dark:hover{--tw-bg-opacity:1;background-color:rgb(17 116 58/var(--tw-bg-opacity,1))}.hover\:text-cream-50:hover{--tw-text-opacity:1;color:rgb(255 251 244/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:fixed:focus{position:fixed}.focus\:left-4:focus{left:1rem}.focus\:top-4:focus{top:1rem}.focus\:z-\[100\]:focus{z-index:100}.focus\:rounded-full:focus{border-radius:9999px}.focus\:border-brand-600:focus{--tw-border-opacity:1;border-color:rgb(185 58 10/var(--tw-border-opacity,1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.focus\:px-4:focus{padding-left:1rem;padding-right:1rem}.focus\:py-2:focus{padding-top:.5rem;padding-bottom:.5rem}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-brand-500\/30:focus{--tw-ring-color:rgba(217,72,15,.3)}.focus-visible\:ring-4:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-visible\:ring-brand-500\/30:focus-visible{--tw-ring-color:rgba(217,72,15,.3)}.focus-visible\:ring-brand-500\/40:focus-visible{--tw-ring-color:rgba(217,72,15,.4)}.focus-visible\:ring-toast-900\/30:focus-visible{--tw-ring-color:rgba(59,38,22,.3)}.focus-visible\:ring-wa\/40:focus-visible{--tw-ring-color:rgba(22,138,69,.4)}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (prefers-reduced-motion:reduce){.motion-reduce\:transition-none{transition-property:none}}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:h-10{height:2.5rem}.sm\:w-10{width:2.5rem}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-16{padding-top:4rem;padding-bottom:4rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:768px){.md\:bottom-6{bottom:1.5rem}.md\:left-auto{left:auto}.md\:right-6{right:1.5rem}.md\:flex{display:flex}.md\:hidden{display:none}.md\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-\[1\.15fr_1fr\]{grid-template-columns:1.15fr 1fr}.md\:justify-center{justify-content:center}.md\:pb-0{padding-bottom:0}}@media (min-width:1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\:grid-cols-\[1fr_1\.1fr\]{grid-template-columns:1fr 1.1fr}.lg\:gap-14{gap:3.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-20{padding-top:5rem;padding-bottom:5rem}.lg\:py-24{padding-top:6rem;padding-bottom:6rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Restaurant","CafeOrCoffeeShop"],"name":"Bar La Plaza","description":"Bar en la Plaza del Mercado de Castro Urdiales especializado en pinchos y tortillas artesanales de patata, desayunos y tortillas enteras por encargo.","servesCuisine":["Española","Tortillas","Pinchos","Desayunos"],"telephone":"+34628224719","email":"agencia39700@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Plaza del Mercado","addressLocality":"Castro Urdiales","addressRegion":"Cantabria","postalCode":"39700","addressCountry":"ES"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"14:00"}],"currenciesAccepted":"EUR","potentialAction":{"@type":"OrderAction","target":{"@type":"EntryPoint","urlTemplate":"https://wa.me/34628224719"},"deliveryMethod":"http://purl.org/goodrelations/v1#DeliveryModePickUp"}}
+</script>
 </head>
-
-<body class="bg-cream-50 pb-20 font-sans text-toast-900 antialiased md:pb-0">
-  <a href="#carta" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-4 focus:py-2">Saltar a la carta</a>
-
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-toast-900/10 bg-cream-50/95 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-      <a href="#inicio" class="flex items-center gap-2" aria-label="Bar La Plaza, ir al inicio">
-        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-toast-700 text-cream-50">
-          <i data-lucide="utensils" class="h-5 w-5" aria-hidden="true"></i>
-        </span>
-        <span class="font-display text-xl font-bold leading-none tracking-tight sm:text-2xl">Bar <span class="text-toast-600">La Plaza</span></span>
-      </a>
-
-      <nav aria-label="Principal" class="hidden items-center gap-1 md:flex">
-        <a href="#inicio" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Inicio</a>
-        <a href="#carta" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Carta</a>
-        <a href="#encargos" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Encargos</a>
-        <a href="#ubicacion" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">Ubicación</a>
-      </nav>
-
-      <div class="flex items-center gap-2">
-        <span data-estado class="inline-flex items-center gap-2 rounded-full border border-toast-900/10 bg-white px-3 py-1.5 text-xs font-semibold" role="status" aria-live="polite">
-          <span data-estado-punto class="h-2.5 w-2.5 rounded-full bg-gray-400"></span>
-          <span data-estado-texto>Comprobando…</span>
-        </span>
-        <button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú"
-                class="flex h-11 w-11 items-center justify-center rounded-full hover:bg-cream-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 md:hidden">
-          <i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-
-    <nav id="menu-movil" aria-label="Menú móvil" class="hidden border-t border-toast-900/10 bg-cream-50 md:hidden">
-      <ul class="mx-auto max-w-6xl space-y-1 px-4 py-3">
-        <li><a href="#inicio" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Inicio</a></li>
-        <li><a href="#carta" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Carta</a></li>
-        <li><a href="#encargos" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Encargos</a></li>
-        <li><a href="#ubicacion" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-200">Ubicación</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="inicio" class="relative isolate overflow-hidden bg-gradient-to-br from-toast-900 via-toast-800 to-toast-700">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=70"
-           alt="Costa cantábrica en Castro Urdiales" width="1600" height="1067"
-           class="absolute inset-0 -z-20 h-full w-full object-cover" fetchpriority="high"
-           onerror="this.style.display='none'">
-      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-toast-900/85 via-toast-900/75 to-toast-900/90" aria-hidden="true"></div>
-
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-        <div class="max-w-2xl space-y-6 text-cream-50">
-          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide ring-1 ring-white/20">
-            <i data-lucide="map-pin" class="h-3.5 w-3.5" aria-hidden="true"></i> Plaza del Mercado · Castro Urdiales
-          </p>
-          <h1 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Las mejores tortillas artesanales en la Plaza del Mercado
-          </h1>
-          <p class="text-base leading-relaxed text-cream-100/90 sm:text-lg">
-            Desayunos, pinchos recién hechos y tortillas enteras por encargo en Castro Urdiales.
-          </p>
-          <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
-            <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar"
-               target="_blank" rel="noopener" data-cta="whatsapp_encargo"
-               class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-wa px-6 py-3.5 text-base font-semibold text-white shadow-lg transition hover:bg-wa-dark active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none sm:w-auto">
-              <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> Encargar por WhatsApp
-            </a>
-            <a href="#carta" data-cta="ver_carta"
-               class="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border-2 border-cream-50/80 px-6 py-3.5 text-base font-semibold text-cream-50 transition hover:bg-cream-50 hover:text-toast-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none sm:w-auto">
-              Ver la carta completa
-            </a>
-          </div>
-          <p class="flex items-center gap-2 text-sm text-cream-100/80">
-            <i data-lucide="clock" class="h-4 w-4" aria-hidden="true"></i> Lunes a sábado, de 08:00 a 14:00 · Domingos cerrado
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CARTA -->
-    <section id="carta" class="py-12 sm:py-16 lg:py-24">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="reveal mx-auto max-w-2xl text-center">
-          <p class="text-xs font-semibold uppercase tracking-wide text-toast-600">Nuestra carta</p>
-          <h2 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Tortillas, desayunos y bebidas</h2>
-          <p class="mt-3 text-base leading-relaxed text-toast-900/75">Elige tu pincho en barra o encarga la tortilla entera para llevar.</p>
-        </div>
-
-        <div role="tablist" aria-label="Categorías de la carta" id="tabs"
-             class="reveal mt-8 flex gap-2 overflow-x-auto pb-2 sm:justify-center">
-          <button role="tab" type="button" data-tab="tortillas" aria-selected="true" aria-controls="panel-carta"
-                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
-            <i data-lucide="egg-fried" class="h-4 w-4" aria-hidden="true"></i> Tortillas estrella
-          </button>
-          <button role="tab" type="button" data-tab="desayunos" aria-selected="false" aria-controls="panel-carta"
-                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
-            <i data-lucide="coffee" class="h-4 w-4" aria-hidden="true"></i> Cafés y desayunos
-          </button>
-          <button role="tab" type="button" data-tab="bebidas" aria-selected="false" aria-controls="panel-carta"
-                  class="inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30">
-            <i data-lucide="beer" class="h-4 w-4" aria-hidden="true"></i> Refrescos y cervezas
-          </button>
-        </div>
-
-        <div id="panel-carta" role="tabpanel" tabindex="0" aria-live="polite"
-             class="mt-6 grid grid-cols-1 gap-4 focus:outline-none sm:grid-cols-2 lg:grid-cols-3"></div>
-
-        <p class="mt-8 text-center text-sm text-toast-900/60">
-          Precios con IVA incluido. Las tortillas contienen huevo. Si tienes alergias o intolerancias, consúltalo con el personal antes de pedir.
-        </p>
-      </div>
-    </section>
-
-    <!-- ENCARGOS -->
-    <section id="encargos" class="pb-12 sm:pb-16 lg:pb-24">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-toast-800 to-toast-700 text-cream-50 shadow-xl">
-          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=70"
-               alt="" width="1200" height="800" loading="lazy" aria-hidden="true"
-               class="absolute inset-0 h-full w-full object-cover opacity-20" onerror="this.style.display='none'">
-          <div class="relative grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-[1.4fr_1fr] lg:p-14">
-            <div class="space-y-4">
-              <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide ring-1 ring-white/20">
-                <i data-lucide="party-popper" class="h-3.5 w-3.5" aria-hidden="true"></i> Tortillas enteras por encargo
-              </p>
-              <h2 class="font-display text-3xl font-semibold leading-tight sm:text-4xl">Para cumpleaños, eventos o un día de playa</h2>
-              <p class="text-base leading-relaxed text-cream-100/90">
-                Encarga tu tortilla entera y recógela en la Plaza del Mercado. Elige entre nuestras 8 variedades y cuéntanos para cuántas personas es.
-              </p>
-            </div>
-            <div class="space-y-3 lg:text-center">
-              <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20entera%20para%20un%20evento"
-                 target="_blank" rel="noopener" data-cta="whatsapp_encargo_banner"
-                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-wa px-6 py-3.5 text-base font-semibold text-white shadow-lg transition hover:bg-wa-dark active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none">
-                <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> Hacer un encargo
-              </a>
-              <p class="text-sm text-cream-100/80">Te confirmamos precio y hora de recogida por WhatsApp.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- UBICACIÓN Y CONTACTO -->
-    <section id="ubicacion" class="bg-cream-100 py-12 sm:py-16 lg:py-24">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="reveal mx-auto max-w-2xl text-center">
-          <p class="text-xs font-semibold uppercase tracking-wide text-toast-600">Dónde estamos</p>
-          <h2 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Ubicación y contacto</h2>
-        </div>
-
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="reveal space-y-5 rounded-card border border-toast-900/10 bg-white p-6 shadow-sm sm:p-8">
-            <ul class="space-y-5">
-              <li class="flex gap-4">
-                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="map-pin" class="h-5 w-5" aria-hidden="true"></i></span>
-                <div>
-                  <h3 class="font-semibold">Dirección</h3>
-                  <address class="not-italic text-toast-900/75">Plaza del Mercado<br>Castro Urdiales, Cantabria</address>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="clock" class="h-5 w-5" aria-hidden="true"></i></span>
-                <div>
-                  <h3 class="font-semibold">Horario</h3>
-                  <p class="text-toast-900/75">Lunes a sábado: 08:00 – 14:00<br>Domingos: cerrado</p>
-                  <p class="mt-1 text-sm font-semibold" data-estado-linea></p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="mail" class="h-5 w-5" aria-hidden="true"></i></span>
-                <div class="min-w-0">
-                  <h3 class="font-semibold">Email</h3>
-                  <a href="mailto:agencia39700@gmail.com" data-cta="email" class="break-all text-toast-700 underline underline-offset-2 hover:text-toast-900">agencia39700@gmail.com</a>
-                </div>
-              </li>
-            </ul>
-
-            <div class="flex flex-col gap-3 pt-2 sm:flex-row">
-              <a href="tel:+34628224719" data-cta="llamar"
-                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full bg-toast-700 px-6 py-3 font-semibold text-white transition hover:bg-toast-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none sm:w-auto">
-                <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i> Llamar al 628 22 47 19
-              </a>
-              <a href="https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales" target="_blank" rel="noopener" data-cta="como_llegar"
-                 class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full border-2 border-toast-600 px-6 py-3 font-semibold text-toast-700 transition hover:bg-cream-100 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none sm:w-auto">
-                <i data-lucide="navigation" class="h-5 w-5" aria-hidden="true"></i> Cómo llegar
-              </a>
-            </div>
-          </article>
-
-          <div class="reveal overflow-hidden rounded-card border border-toast-900/10 bg-white shadow-sm">
-            <iframe title="Mapa de Plaza del Mercado, Castro Urdiales"
-                    src="https://www.google.com/maps?q=Plaza+del+Mercado,+Castro+Urdiales&output=embed"
-                    width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="h-full min-h-[320px] w-full border-0"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-toast-900 py-8 text-cream-100/80">
-    <div class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 text-center text-sm sm:px-6 lg:px-8">
-      <p class="font-display text-lg font-semibold text-cream-50">Bar La Plaza</p>
-      <p>Plaza del Mercado, Castro Urdiales · <a href="tel:+34628224719" class="underline underline-offset-2">628 22 47 19</a></p>
-      <p class="text-xs text-cream-100/60">&copy; <span id="anio"></span> Bar La Plaza. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- BARRA FIJA MÓVIL -->
-  <div class="fixed inset-x-0 bottom-0 z-50 flex gap-2 border-t border-toast-900/10 bg-white/95 p-3 backdrop-blur md:hidden">
-    <a href="tel:+34628224719" data-cta="llamar_barra"
-       class="flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full bg-toast-700 py-3 text-center font-semibold text-white">
-      <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i> Llamar
-    </a>
-    <a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar" target="_blank" rel="noopener" data-cta="whatsapp_barra"
-       class="flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full bg-wa py-3 text-center font-semibold text-white">
-      <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i> WhatsApp
-    </a>
-  </div>
-
-  <script>
-    (function () {
-      "use strict";
-
-      var WA = "34628224719";
-      function waLink(texto) {
-        return "https://wa.me/" + WA + "?text=" + encodeURIComponent(texto);
-      }
-
-      /* ---------- DATOS DE LA CARTA ---------- */
-      var TORTILLAS = [
-        { n: "Tradicional con cebolla pochada", d: "La clásica de siempre, jugosa y con cebolla bien pochada.", p: 3.20, e: 18.00 },
-        { n: "Con bonito y mayonesa", d: "Tortilla rellena de bonito del norte y un toque de mayonesa.", p: 3.50, e: 20.00 },
-        { n: "Jamón York y queso fundido", d: "Jamón York y queso fundido en su punto.", p: 3.50, e: 19.50 },
-        { n: "Queso de cabra y cebolla caramelizada", d: "Contraste de queso de cabra con cebolla caramelizada.", p: 3.80, e: 21.00 },
-        { n: "Chorizo a la sidra", d: "Chorizo cocinado a la sidra, con mucho sabor.", p: 3.50, e: 19.50 },
-        { n: "Espinacas y queso manchego", d: "Espinacas tiernas y queso manchego.", p: 3.50, e: 19.50 },
-        { n: "Paisana (verduras y taco de jamón)", d: "Verduras de temporada y tacos de jamón.", p: 3.50, e: 19.50 },
-        { n: "Especial Castro (rellena de alioli y lomo)", d: "Nuestra especial: rellena de alioli y lomo.", p: 3.80, e: 21.00 }
-      ];
-      var DESAYUNOS = [
-        { n: "Café solo", d: "Intenso y recién hecho.", i: "coffee" },
-        { n: "Café con leche", d: "El clásico para empezar la mañana.", i: "coffee" },
-        { n: "Cortado", d: "Café con un toque de leche.", i: "coffee" },
-        { n: "Zumo de naranja natural", d: "Exprimido al momento.", i: "citrus" },
-        { n: "Tostada con tomate y aceite", d: "Pan tostado con tomate y aceite de oliva.", i: "sandwich" }
-      ];
-      var BEBIDAS = [
-        { n: "Coca-Cola", d: "Refresco.", i: "cup-soda" },
-        { n: "Fanta", d: "Refresco.", i: "cup-soda" },
-        { n: "Aquarius", d: "Refresco.", i: "cup-soda" },
-        { n: "Cerveza de caña", d: "Bien fría, de grifo.", i: "beer" },
-        { n: "Agua", d: "Agua mineral.", i: "glass-water" }
-      ];
-
-      var eur = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
-
-      /* ---------- RENDER DE LA CARTA ---------- */
-      function cardTortilla(t) {
-        var msg = "Hola, quiero encargar una tortilla entera: " + t.n + ".";
-        return '<article class="flex flex-col rounded-card border border-toast-900/10 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md motion-reduce:transition-none">' +
-          '<h3 class="font-display text-lg font-semibold leading-snug">' + t.n + '</h3>' +
-          '<p class="mt-1 text-sm text-toast-900/70">' + t.d + '</p>' +
-          '<dl class="mt-4 grid grid-cols-2 gap-2 text-center">' +
-            '<div class="rounded-xl bg-cream-100 p-2"><dt class="text-xs font-semibold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-bold">' + eur.format(t.p) + '</dd></div>' +
-            '<div class="rounded-xl bg-cream-100 p-2"><dt class="text-xs font-semibold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-bold">' + eur.format(t.e) + '</dd></div>' +
-          '</dl>' +
-          '<a href="' + waLink(msg) + '" target="_blank" rel="noopener" data-cta="whatsapp_encargo_producto" ' +
-             'class="mt-4 inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-wa px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-wa-dark focus:outline-none focus-visible:ring-4 focus-visible:ring-wa/30 motion-reduce:transition-none">' +
-            '<i data-lucide="message-circle" class="h-4 w-4" aria-hidden="true"></i> Encargar entera</a>' +
-        '</article>';
-      }
-
-      function cardSimple(x) {
-        return '<article class="flex items-start gap-4 rounded-card border border-toast-900/10 bg-white p-5 shadow-sm">' +
-          '<span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-cream-100 text-toast-600"><i data-lucide="' + x.i + '" class="h-5 w-5" aria-hidden="true"></i></span>' +
-          '<div class="min-w-0"><h3 class="font-semibold">' + x.n + '</h3><p class="mt-0.5 text-sm text-toast-900/70">' + x.d + '</p>' +
-          '<p class="mt-2 text-xs font-semibold uppercase tracking-wide text-toast-600">Precio en barra</p></div>' +
-        '</article>';
-      }
-
-      var panel = document.getElementById("panel-carta");
-      var tabs = Array.prototype.slice.call(document.querySelectorAll("[data-tab]"));
-
-      function pintarPestana(btn, activa) {
-        btn.setAttribute("aria-selected", activa ? "true" : "false");
-        btn.className = "inline-flex min-h-[44px] flex-none items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-500/30 motion-reduce:transition-none " +
-          (activa ? "bg-toast-700 text-white shadow" : "bg-white text-toast-800 ring-1 ring-toast-900/10 hover:bg-cream-200");
-      }
-
-      function mostrar(cat) {
-        var html = "";
-        if (cat === "tortillas") html = TORTILLAS.map(cardTortilla).join("");
-        if (cat === "desayunos") html = DESAYUNOS.map(cardSimple).join("");
-        if (cat === "bebidas") html = BEBIDAS.map(cardSimple).join("");
-        panel.innerHTML = html;
-        tabs.forEach(function (b) { pintarPestana(b, b.dataset.tab === cat); });
-        if (window.lucide) window.lucide.createIcons();
-      }
-
-      tabs.forEach(function (b, i) {
-        b.addEventListener("click", function () { mostrar(b.dataset.tab); });
-        b.addEventListener("keydown", function (e) {
-          var j = null;
-          if (e.key === "ArrowRight") j = (i + 1) % tabs.length;
-          if (e.key === "ArrowLeft") j = (i - 1 + tabs.length) % tabs.length;
-          if (j !== null) { e.preventDefault(); tabs[j].focus(); mostrar(tabs[j].dataset.tab); }
-        });
-      });
-
-      /* ---------- ESTADO ABIERTO / CERRADO (Europe/Madrid) ---------- */
-      var DIAS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-      var APERTURA = 8 * 60, CIERRE = 14 * 60;
-
-      function calcularEstado() {
-        var partes = new Intl.DateTimeFormat("en-GB", {
-          timeZone: "Europe/Madrid", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false
-        }).formatToParts(new Date());
-        var v = {};
-        partes.forEach(function (p) { v[p.type] = p.value; });
-        var dia = DIAS.indexOf(v.weekday);
-        var min = (parseInt(v.hour, 10) % 24) * 60 + parseInt(v.minute, 10);
-        var laborable = dia !== 0;
-
-        if (laborable && min >= APERTURA && min < CIERRE) {
-          return { abierto: true, texto: "Abierto ahora", detalle: "Abierto ahora · cierra a las 14:00" };
-        }
-        var cuando;
-        if (laborable && min < APERTURA) cuando = "abre hoy a las 08:00";
-        else if (dia === 6) cuando = "abre el lunes a las 08:00";
-        else cuando = "abre mañana a las 08:00";
-        return { abierto: false, texto: "Cerrado", detalle: "Cerrado · " + cuando };
-      }
-
-      function actualizarEstado() {
-        var e = calcularEstado();
-        document.querySelectorAll("[data-estado]").forEach(function (el) {
-          el.querySelector("[data-estado-texto]").textContent = e.texto;
-          el.querySelector("[data-estado-punto]").className = "h-2.5 w-2.5 rounded-full " + (e.abierto ? "bg-green-600 animate-pulse motion-reduce:animate-none" : "bg-red-600");
-          el.className = "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold " +
-            (e.abierto ? "border-green-700/20 bg-green-50 text-green-800" : "border-red-700/20 bg-red-50 text-red-800");
-          el.title = e.detalle;
-        });
-        document.querySelectorAll("[data-estado-linea]").forEach(function (el) {
-          el.textContent = e.detalle;
-          el.className = "mt-1 text-sm font-semibold " + (e.abierto ? "text-green-800" : "text-red-800");
-        });
-      }
-
-      /* ---------- MENÚ MÓVIL ---------- */
-      var btn = document.getElementById("menu-btn");
-      var menu = document.getElementById("menu-movil");
-      function cerrarMenu() {
-        menu.classList.add("hidden");
-        btn.setAttribute("aria-expanded", "false");
-        btn.setAttribute("aria-label", "Abrir menú");
-      }
-      btn.addEventListener("click", function () {
-        var abierto = btn.getAttribute("aria-expanded") === "true";
-        if (abierto) { cerrarMenu(); return; }
-        menu.classList.remove("hidden");
-        btn.setAttribute("aria-expanded", "true");
-        btn.setAttribute("aria-label", "Cerrar menú");
-      });
-      menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", cerrarMenu); });
-      document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrarMenu(); });
-
-      /* ---------- ANIMACIÓN DE ENTRADA ---------- */
-      var reveals = document.querySelectorAll(".reveal");
-      if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); }
-          });
-        }, { threshold: 0.12 });
-        reveals.forEach(function (el) { io.observe(el); });
-      } else {
-        reveals.forEach(function (el) { el.classList.add("is-visible"); });
-      }
-
-      /* ---------- ANALÍTICA DE CTAs (opcional) ---------- */
-      document.querySelectorAll("[data-cta]").forEach(function (el) {
-        el.addEventListener("click", function () {
-          if (typeof window.gtag === "function") {
-            window.gtag("event", "cta_click", { cta: el.dataset.cta, pagina: location.pathname });
-          }
-        });
-      });
-
-      /* ---------- INICIO ---------- */
-      document.getElementById("anio").textContent = new Date().getFullYear();
-      mostrar("tortillas");
-      actualizarEstado();
-      setInterval(actualizarEstado, 60000);
-      window.addEventListener("load", function () { if (window.lucide) window.lucide.createIcons(); });
-    })();
-  </script>
+<body class="bg-cream-50 pb-24 font-sans text-toast-900 antialiased md:pb-0">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-egg-fried" viewBox="0 0 24 24"><circle cx="11.5" cy="12.5" r="3.5"></circle><path d="M3 8c0-3.5 2.5-6 6.5-6 5 0 4.83 3 7.5 5s5 2 5 6c0 4.5-2.5 6.5-7 6.5-2.5 0-2.5 2.5-6 2.5s-7-2-7-5.5c0-3 1.5-3 1.5-5C3.5 10 3 9 3 8Z"></path></symbol><symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"></path><path d="M14 2v2"></path><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"></path><path d="M6 2v2"></path></symbol><symbol id="i-beer" viewBox="0 0 24 24"><path d="M17 11h1a3 3 0 0 1 0 6h-1"></path><path d="M9 12v6"></path><path d="M13 12v6"></path><path d="M14 7.5c-1 0-1.44.5-3 .5s-2-.5-3-.5-1.72.5-2.5.5a2.5 2.5 0 0 1 0-5c.78 0 1.57.5 2.5.5S9.44 2 11 2s2 1.5 3 1.5 1.72-.5 2.5-.5a2.5 2.5 0 0 1 0 5c-.78 0-1.5-.5-2.5-.5Z"></path><path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"></path></symbol><symbol id="i-egg" viewBox="0 0 24 24"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"></path></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="M12 5v14"></path></symbol><symbol id="i-fish" viewBox="0 0 24 24"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"></path><path d="M18 12v.5"></path><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"></path><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"></path><path d="M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4"></path><path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98"></path></symbol><symbol id="i-milk" viewBox="0 0 24 24"><path d="M8 2h8"></path><path d="M9 2v2.789a4 4 0 0 1-.672 2.219l-.656.984A4 4 0 0 0 7 10.212V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-9.789a4 4 0 0 0-.672-2.219l-.656-.984A4 4 0 0 1 15 4.788V2"></path><path d="M7 15a6.472 6.472 0 0 1 5 0 6.47 6.47 0 0 0 5 0"></path></symbol><symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></symbol><symbol id="i-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></symbol><symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></symbol><symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></symbol><symbol id="i-navigation" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></symbol></defs></svg>
+<a href="#carta" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-4 focus:py-2">Saltar a la carta</a>
+<header class="sticky top-0 z-50 border-b border-toast-900/10 bg-cream-50/95 backdrop-blur">
+<div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
+<a href="#inicio" class="flex items-center gap-2" aria-label="Bar La Plaza, inicio">
+<span class="h-9 w-9 flex-none sm:h-10 sm:w-10"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g fill="none" stroke="#FFF3C4" stroke-width="3" stroke-linecap="round"><path d="M40 62 q6-6 12 0"/><path d="M52 70 q6-5 12 0"/><path d="M66 60 q6-6 12 0"/><path d="M48 66 q5-4 10 0"/><path d="M70 69 q5-4 9 0"/></g><g class="steam" style="display:none" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></span>
+<span class="whitespace-nowrap font-serif text-xl font-extrabold leading-none text-toast-900 sm:text-2xl">Bar <span class="text-brand-600">La Plaza</span></span>
+</a>
+<nav aria-label="Principal" class="hidden items-center gap-1 md:flex">
+<a href="#inicio" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-100">Inicio</a>
+<a href="#carta" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-100">Carta</a>
+<a href="#encargos" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-100">Encargos</a>
+<a href="#ubicacion" class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-cream-100">Ubicación</a>
+</nav>
+<div class="flex items-center gap-2">
+<span data-estado class="estado inline-flex items-center gap-2 whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-bold" role="status" aria-live="polite"><span class="estado-punto"></span><span data-estado-texto>Comprobando…</span></span>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú" class="flex h-11 w-11 items-center justify-center rounded-full border border-toast-900/15 hover:bg-cream-100 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 md:hidden"><svg class="ic h-6 w-6" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+</div>
+</div>
+<nav id="menu-movil" aria-label="Menú móvil" class="hidden border-t border-toast-900/10 bg-cream-50 md:hidden">
+<ul class="mx-auto max-w-6xl space-y-1 px-4 py-3">
+<li><a href="#inicio" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-100">Inicio</a></li>
+<li><a href="#carta" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-100">Carta</a></li>
+<li><a href="#encargos" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-100">Encargos</a></li>
+<li><a href="#ubicacion" class="block rounded-xl px-4 py-3 font-semibold hover:bg-cream-100">Ubicación</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="inicio" class="relative isolate overflow-hidden bg-gradient-to-b from-cream-100 to-cream-50">
+<div class="blob absolute -right-24 -top-24 -z-10 h-[28rem] w-[28rem] rounded-full opacity-60 blur-2xl" aria-hidden="true"></div>
+<div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[1.15fr_1fr] lg:px-8 lg:py-24">
+<div class="space-y-6">
+<p class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand-700 shadow-sm ring-1 ring-toast-900/10"><svg class="ic h-3.5 w-3.5" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg> Plaza del Mercado · Castro Urdiales</p>
+<h1 class="font-serif text-4xl font-extrabold leading-[1.05] text-toast-900 sm:text-5xl lg:text-6xl">Las mejores tortillas artesanales en la Plaza del Mercado</h1>
+<p class="max-w-xl text-base leading-relaxed text-toast-800 sm:text-lg">Desayunos, pinchos recién hechos y tortillas enteras por encargo en Castro Urdiales.</p>
+<div class="flex flex-col gap-3 sm:flex-row">
+<a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar" target="_blank" rel="noopener" data-cta="whatsapp_encargo" class="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-wa px-7 text-base font-bold text-white shadow-lg shadow-wa/30 transition hover:bg-wa-dark active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-wa/40 motion-reduce:transition-none sm:w-auto"><svg class="icf h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg> Encargar por WhatsApp</a>
+<a href="#carta" class="inline-flex min-h-[52px] w-full items-center justify-center rounded-full border-2 border-toast-900 px-7 text-base font-bold text-toast-900 transition hover:bg-toast-900 hover:text-cream-50 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-900/30 motion-reduce:transition-none sm:w-auto">Ver la carta completa</a>
+</div>
+<ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-toast-800">
+<li class="flex items-center gap-2"><svg class="ic h-4 w-4 text-brand-600" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg> Lunes a sábado · 8:00 a 14:00</li>
+<li class="flex items-center gap-2"><svg class="ic h-4 w-4 text-brand-600" aria-hidden="true" focusable="false"><use href="#i-bag"/></svg> Tortillas enteras por encargo</li>
+</ul>
+</div>
+<div class="hero-ill relative mx-auto w-full max-w-sm">
+<div class="float aspect-square w-full"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g fill="none" stroke="#FFF3C4" stroke-width="3" stroke-linecap="round"><path d="M40 62 q6-6 12 0"/><path d="M52 70 q6-5 12 0"/><path d="M66 60 q6-6 12 0"/><path d="M48 66 q5-4 10 0"/><path d="M70 69 q5-4 9 0"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<span class="absolute -left-2 top-6 rotate-[-6deg] rounded-2xl bg-white px-3 py-2 text-xs font-extrabold text-toast-900 shadow-lg ring-1 ring-toast-900/10">Pincho desde 3,20 €</span>
+<span class="absolute -right-2 bottom-10 rotate-[5deg] rounded-2xl bg-brand-600 px-3 py-2 text-xs font-extrabold text-white shadow-lg">Entera desde 18 €</span>
+</div>
+</div>
+</section>
+<section id="carta" class="py-14 sm:py-16 lg:py-20">
+<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+<div class="reveal mx-auto max-w-2xl text-center">
+<p class="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">Nuestra carta</p>
+<h2 class="mt-2 font-serif text-3xl font-extrabold sm:text-4xl">Elige tu pincho o encarga la tortilla entera</h2>
+<p class="mt-3 text-toast-800">Pulsa <strong>+ Pincho</strong> o <strong>+ Entera</strong> y prepara tu pedido en un momento.</p>
+</div>
+<div role="tablist" aria-label="Categorías de la carta" class="reveal mt-8 flex gap-2 overflow-x-auto pb-2 md:justify-center">
+<button role="tab" type="button" data-tab="tortillas" aria-selected="true" class="tab inline-flex min-h-[46px] flex-none items-center gap-2 rounded-full px-5 text-sm font-bold"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-egg-fried"/></svg> Tortillas estrella</button>
+<button role="tab" type="button" data-tab="desayunos" aria-selected="false" class="tab inline-flex min-h-[46px] flex-none items-center gap-2 rounded-full px-5 text-sm font-bold"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-coffee"/></svg> Cafés y desayunos</button>
+<button role="tab" type="button" data-tab="bebidas" aria-selected="false" class="tab inline-flex min-h-[46px] flex-none items-center gap-2 rounded-full px-5 text-sm font-bold"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-beer"/></svg> Refrescos y cervezas</button>
+</div>
+<div data-panel="tortillas" class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g fill="none" stroke="#FFF3C4" stroke-width="3" stroke-linecap="round"><path d="M40 62 q6-6 12 0"/><path d="M52 70 q6-5 12 0"/><path d="M66 60 q6-6 12 0"/><path d="M48 66 q5-4 10 0"/><path d="M70 69 q5-4 9 0"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Tradicional con cebolla pochada</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,20 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">18,00 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t0-p" data-nombre="Tradicional con cebolla pochada" data-tipo="pincho" data-precio="3.2" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t0-e" data-nombre="Tradicional con cebolla pochada" data-tipo="entera" data-precio="18.0" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><ellipse cx="58" cy="63" rx="12" ry="5.5" fill="#9DB4C0"/><path d="M70 63 l9-6 v12z" fill="#9DB4C0"/><circle cx="51" cy="62" r="1.3" fill="#2B2420"/><path d="M40 70 q5-5 10 0 t10 0" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Con Bonito y mayonesa</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene pescado"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-fish"/></svg>Pescado</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,50 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">20,00 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t1-p" data-nombre="Con Bonito y mayonesa" data-tipo="pincho" data-precio="3.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t1-e" data-nombre="Con Bonito y mayonesa" data-tipo="entera" data-precio="20.0" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><rect x="42" y="57" width="18" height="13" rx="2.5" fill="#F4A6A6" transform="rotate(-8 51 63)"/><path d="M62 71 l18-5 v9z" fill="#FFC93C"/><path d="M62 71 l18-5" stroke="#E5A800" stroke-width="1.5"/><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Jamón York y Queso fundido</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene lácteos"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,50 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">19,50 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t2-p" data-nombre="Jamón York y Queso fundido" data-tipo="pincho" data-precio="3.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t2-e" data-nombre="Jamón York y Queso fundido" data-tipo="entera" data-precio="19.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><circle cx="56" cy="63" r="9.5" fill="#FBFBF5" stroke="#E0DCC8" stroke-width="1.5"/><g fill="none" stroke="#8A4B12" stroke-width="3" stroke-linecap="round"><path d="M68 62 q6-6 12 0"/><path d="M66 70 q6-5 12 0"/><path d="M40 68 q5-4 10 0"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Queso de Cabra y Cebolla Caramelizada</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene lácteos"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,80 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">21,00 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t3-p" data-nombre="Queso de Cabra y Cebolla Caramelizada" data-tipo="pincho" data-precio="3.8" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t3-e" data-nombre="Queso de Cabra y Cebolla Caramelizada" data-tipo="entera" data-precio="21.0" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g><circle cx="46" cy="64" r="6" fill="#C0392B"/><circle cx="60" cy="59" r="6" fill="#C0392B"/><circle cx="74" cy="64" r="6" fill="#C0392B"/><circle cx="59" cy="70" r="6" fill="#C0392B"/></g><g fill="#7A1F14"><circle cx="45" cy="63" r="1.3"/><circle cx="62" cy="58" r="1.3"/><circle cx="75" cy="65" r="1.3"/><circle cx="58" cy="71" r="1.3"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Chorizo a la sidra</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,50 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">19,50 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t4-p" data-nombre="Chorizo a la sidra" data-tipo="pincho" data-precio="3.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t4-e" data-nombre="Chorizo a la sidra" data-tipo="entera" data-precio="19.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g fill="#3E9B4F"><path d="M42 66 q4-11 13-4 q-2 10-13 4z"/><path d="M54 60 q5-10 13-3 q-3 10-13 3z"/><path d="M52 71 q5-8 12-2 q-3 8-12 2z"/></g><path d="M68 71 l13-2 v8z" fill="#F5D77A"/><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Espinacas y Queso Manchego</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene lácteos"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,50 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">19,50 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t5-p" data-nombre="Espinacas y Queso Manchego" data-tipo="pincho" data-precio="3.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t5-e" data-nombre="Espinacas y Queso Manchego" data-tipo="entera" data-precio="19.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g><circle cx="44" cy="63" r="2.6" fill="#4CAF50"/><circle cx="52" cy="68" r="2.6" fill="#4CAF50"/><circle cx="60" cy="60" r="2.6" fill="#4CAF50"/><circle cx="72" cy="66" r="2.6" fill="#4CAF50"/><rect x="62" y="67" width="6" height="5" rx="1" fill="#E53935"/><rect x="45" y="68" width="6" height="5" rx="1" fill="#E53935"/><rect x="54" y="61" width="6" height="5" rx="1" fill="#F4A6A6"/><rect x="70" y="59" width="6" height="5" rx="1" fill="#F4A6A6"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Paisana (Verduras y Taco de Jamón)</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,50 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">19,50 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t6-p" data-nombre="Paisana (Verduras y Taco de Jamón)" data-tipo="pincho" data-precio="3.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t6-e" data-nombre="Paisana (Verduras y Taco de Jamón)" data-tipo="entera" data-precio="19.5" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article><article class="prod reveal flex flex-col rounded-3xl border border-toast-900/10 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-32 w-32"><svg viewBox="0 8 120 104" class="ill tort" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="42" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="#fff"/><ellipse cx="60" cy="82" rx="54" ry="24" fill="none" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="82" rx="42" ry="17" fill="#F5EBDA"/><path d="M18 66 v10 c0 11 19 19 42 19 s42-8 42-19 v-10z" fill="#D8962A"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="#F2C24F"/><ellipse cx="60" cy="66" rx="42" ry="19" fill="none" stroke="#D8962A" stroke-width="2"/><ellipse cx="60" cy="64" rx="31" ry="12" fill="#F7D679" opacity=".75"/><g fill="#B9754A"><circle cx="50" cy="66" r="6"/><circle cx="68" cy="63" r="6"/></g><path d="M40 60 q4 4 8 0 t8 0 t8 0 t8 0 t8 0" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<div class="flex-1"><h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Especial Castro (Rellena de Alioli y Lomo)</h3>
+<div class="mt-2 flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800" title="Contiene huevo"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></div>
+<dl class="mt-4 grid grid-cols-2 gap-2 text-center">
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Pincho</dt><dd class="text-lg font-extrabold text-toast-900">3,80 €</dd></div>
+<div class="rounded-2xl bg-cream-100 py-2"><dt class="text-[11px] font-bold uppercase tracking-wide text-toast-700">Entera</dt><dd class="text-lg font-extrabold text-toast-900">21,00 €</dd></div>
+</dl>
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button type="button" data-add data-id="t7-p" data-nombre="Especial Castro (Rellena de Alioli y Lomo)" data-tipo="pincho" data-precio="3.8" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full border-2 border-brand-600 px-3 text-sm font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Pincho</button>
+<button type="button" data-add data-id="t7-e" data-nombre="Especial Castro (Rellena de Alioli y Lomo)" data-tipo="entera" data-precio="21.0" class="inline-flex min-h-[44px] items-center justify-center gap-1 rounded-full bg-brand-600 px-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 motion-reduce:transition-none"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg> Entera</button>
+</div>
+</article></div>
+<div data-panel="desayunos" class="mt-6 hidden grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5"><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 8 120 104" class="ill cup" aria-hidden="true" focusable="false"><ellipse cx="60" cy="104" rx="46" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="98" rx="42" ry="9" fill="#fff" stroke="#E7D7BC" stroke-width="2"/><g transform="translate(60 60) scale(0.86) translate(-60 -60)"><path d="M86 66 h6 a9 9 0 0 1 0 18 h-9" fill="none" stroke="#E7D7BC" stroke-width="5"/><path d="M32 58 h56 v14 c0 15-12 24-28 24 s-28-9-28-24z" fill="#fff" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="58" rx="28" ry="7.5" fill="#3B2314"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Café solo</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 8 120 104" class="ill cup" aria-hidden="true" focusable="false"><ellipse cx="60" cy="104" rx="46" ry="6" fill="#3B2616" opacity=".12"/><ellipse cx="60" cy="98" rx="42" ry="9" fill="#fff" stroke="#E7D7BC" stroke-width="2"/><g transform="translate(60 60) scale(1) translate(-60 -60)"><path d="M86 66 h6 a9 9 0 0 1 0 18 h-9" fill="none" stroke="#E7D7BC" stroke-width="5"/><path d="M32 58 h56 v14 c0 15-12 24-28 24 s-28-9-28-24z" fill="#fff" stroke="#E7D7BC" stroke-width="2"/><ellipse cx="60" cy="58" rx="28" ry="7.5" fill="#B98355"/><path d="M48 58 q6-4 12 0 t12 0" stroke="#F3E1C3" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Café con leche</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 8 120 104" class="ill cup" aria-hidden="true" focusable="false"><ellipse cx="60" cy="104" rx="40" ry="6" fill="#3B2616" opacity=".12"/><path d="M38 50 h44 l-4 48 q-1 6-8 6 h-20 q-7 0-8-6z" fill="#fff" fill-opacity=".55" stroke="#D9CBB3" stroke-width="2"/><path d="M41 78 h38 l-3 20 q-1 5-7 5 h-18 q-6 0-7-5z" fill="#3B2314"/><path d="M40 60 h40 l-1 18 h-38z" fill="#E7C9A0"/><ellipse cx="60" cy="60" rx="20" ry="3" fill="#F3E1C3"/><path d="M44 56 v34" stroke="#fff" stroke-width="2" opacity=".6"/><g class="steam" fill="none" stroke="#D8C7AA" stroke-width="3.5" stroke-linecap="round"><path d="M46 44 q-5-7 0-13 t0-12" style="animation-delay:0s"/><path d="M60 40 q-5-7 0-13 t0-12" style="animation-delay:.9s"/><path d="M74 44 q-5-7 0-13 t0-12" style="animation-delay:1.8s"/></g></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Cortado</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="58" cy="106" rx="34" ry="6" fill="#3B2616" opacity=".12"/><path d="M36 36 h44 l-5 62 q-1 7-8 7 h-18 q-7 0-8-7z" fill="#fff" fill-opacity=".6" stroke="#D9CBB3" stroke-width="2"/><path d="M39 50 h38 l-4 48 q-1 5-7 5 h-16 q-6 0-7-5z" fill="#FFA726"/><ellipse cx="58" cy="50" rx="19" ry="4" fill="#FFB74D"/><g fill="#fff" opacity=".7"><circle class="bub" cx="50" cy="92" r="2.2" style="animation-delay:0s"/><circle class="bub" cx="64" cy="94" r="1.8" style="animation-delay:1s"/><circle class="bub" cx="57" cy="90" r="2" style="animation-delay:1.9s"/></g><circle cx="88" cy="40" r="15" fill="#FFB300"/><circle cx="88" cy="40" r="11.5" fill="#FFCA28"/><g stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M88 29 v22"/><path d="M77 40 h22"/><path d="M80 32 l16 16"/><path d="M96 32 l-16 16"/></g></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Zumo de naranja natural</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill toast" aria-hidden="true" focusable="false"><ellipse cx="60" cy="102" rx="46" ry="7" fill="#3B2616" opacity=".12"/><rect x="20" y="30" width="80" height="66" rx="16" fill="#E3A857"/><rect x="26" y="36" width="68" height="54" rx="11" fill="#F6D9A0"/><ellipse cx="60" cy="63" rx="29" ry="19" fill="#E8553E" opacity=".92"/><g fill="#FFD2C9" opacity=".8"><circle cx="48" cy="58" r="2"/><circle cx="64" cy="55" r="2"/><circle cx="72" cy="67" r="2"/><circle cx="52" cy="72" r="2"/></g><g fill="none" stroke="#C5D86D" stroke-width="2.4" stroke-linecap="round"><path d="M42 52 q8-4 14 0"/><path d="M60 74 q8 4 16-2"/></g><path d="M32 40 q6-4 12-2" stroke="#fff" stroke-width="2.5" opacity=".6" fill="none" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Tostada con tomate y aceite</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article></div>
+<div data-panel="bebidas" class="mt-6 hidden grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5"><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="30" ry="5" fill="#3B2616" opacity=".12"/><path d="M66 12 l-8 36" stroke="#D32F2F" stroke-width="5" stroke-linecap="round"/><path d="M40 30 h40 l-4 68 q-1 7-8 7 h-16 q-7 0-8-7z" fill="#fff" fill-opacity=".55" stroke="#D9CBB3" stroke-width="2"/><path d="M43 42 h34 l-3.5 56 q-1 5-7 5 h-13 q-6 0-7-5z" fill="#3B1D12"/><g fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".7"><rect x="48" y="52" width="14" height="14" rx="3" transform="rotate(-12 55 59)"/><rect x="62" y="60" width="13" height="13" rx="3" transform="rotate(14 68 66)"/></g><g fill="#fff" opacity=".75"><circle class="bub" cx="50" cy="94" r="2.4" style="animation-delay:0s"/><circle class="bub" cx="60" cy="96" r="1.8" style="animation-delay:.7s"/><circle class="bub" cx="68" cy="93" r="2.2" style="animation-delay:1.4s"/><circle class="bub" cx="56" cy="92" r="1.6" style="animation-delay:2.1s"/></g><path d="M46 36 v50" stroke="#fff" stroke-width="2.4" opacity=".55" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Coca-Cola</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="30" ry="5" fill="#3B2616" opacity=".12"/><path d="M66 12 l-8 36" stroke="#FF6F00" stroke-width="5" stroke-linecap="round"/><path d="M40 30 h40 l-4 68 q-1 7-8 7 h-16 q-7 0-8-7z" fill="#fff" fill-opacity=".55" stroke="#D9CBB3" stroke-width="2"/><path d="M43 42 h34 l-3.5 56 q-1 5-7 5 h-13 q-6 0-7-5z" fill="#FF8A1F"/><g fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".7"><rect x="48" y="52" width="14" height="14" rx="3" transform="rotate(-12 55 59)"/><rect x="62" y="60" width="13" height="13" rx="3" transform="rotate(14 68 66)"/></g><g fill="#fff" opacity=".75"><circle class="bub" cx="50" cy="94" r="2.4" style="animation-delay:0s"/><circle class="bub" cx="60" cy="96" r="1.8" style="animation-delay:.7s"/><circle class="bub" cx="68" cy="93" r="2.2" style="animation-delay:1.4s"/><circle class="bub" cx="56" cy="92" r="1.6" style="animation-delay:2.1s"/></g><path d="M46 36 v50" stroke="#fff" stroke-width="2.4" opacity=".55" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Fanta</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="30" ry="5" fill="#3B2616" opacity=".12"/><path d="M66 12 l-8 36" stroke="#29B6F6" stroke-width="5" stroke-linecap="round"/><path d="M40 30 h40 l-4 68 q-1 7-8 7 h-16 q-7 0-8-7z" fill="#fff" fill-opacity=".55" stroke="#D9CBB3" stroke-width="2"/><path d="M43 42 h34 l-3.5 56 q-1 5-7 5 h-13 q-6 0-7-5z" fill="#E8F07A"/><g fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".7"><rect x="48" y="52" width="14" height="14" rx="3" transform="rotate(-12 55 59)"/><rect x="62" y="60" width="13" height="13" rx="3" transform="rotate(14 68 66)"/></g><g fill="#fff" opacity=".75"><circle class="bub" cx="50" cy="94" r="2.4" style="animation-delay:0s"/><circle class="bub" cx="60" cy="96" r="1.8" style="animation-delay:.7s"/><circle class="bub" cx="68" cy="93" r="2.2" style="animation-delay:1.4s"/><circle class="bub" cx="56" cy="92" r="1.6" style="animation-delay:2.1s"/></g><path d="M46 36 v50" stroke="#fff" stroke-width="2.4" opacity=".55" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Aquarius</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="30" ry="5" fill="#3B2616" opacity=".12"/><path d="M40 38 h40 l-3.5 58 q-1 7-8 7 h-17 q-7 0-8-7z" fill="#F5B82E"/><path d="M40 38 h40 l-3.5 58 q-1 7-8 7 h-17 q-7 0-8-7z" fill="none" stroke="#D9CBB3" stroke-width="2"/><path d="M37 40 q1-14 11-11 q5-9 13-3 q10-3 14 8 q7 2 4 8 z" fill="#FFF7E0"/><g fill="#FFF0B3" opacity=".9"><circle class="bub" cx="50" cy="92" r="1.8" style="animation-delay:0s"/><circle class="bub" cx="60" cy="94" r="1.4" style="animation-delay:.6s"/><circle class="bub" cx="68" cy="91" r="1.7" style="animation-delay:1.2s"/><circle class="bub" cx="56" cy="90" r="1.3" style="animation-delay:1.8s"/><circle class="bub" cx="64" cy="92" r="1.5" style="animation-delay:2.4s"/></g><path d="M46 46 v46" stroke="#fff" stroke-width="2.4" opacity=".5" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Cerveza de caña</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article><article class="prod reveal flex flex-col items-center rounded-3xl border border-toast-900/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+<div class="relative mx-auto h-28 w-28"><svg viewBox="0 0 120 120" class="ill glass" aria-hidden="true" focusable="false"><ellipse cx="60" cy="106" rx="30" ry="5" fill="#3B2616" opacity=".12"/><path d="M40 34 h40 l-4 64 q-1 7-8 7 h-16 q-7 0-8-7z" fill="#E3F3FB" fill-opacity=".8" stroke="#BCD9E8" stroke-width="2"/><path d="M43 52 h34 l-3.2 46 q-1 5-7 5 h-13 q-6 0-7-5z" fill="#9AD3F0" fill-opacity=".85"/><g fill="#fff" opacity=".8"><circle class="bub" cx="52" cy="92" r="2" style="animation-delay:0s"/><circle class="bub" cx="64" cy="94" r="1.6" style="animation-delay:.9s"/><circle class="bub" cx="58" cy="90" r="1.8" style="animation-delay:1.7s"/></g><path d="M92 20 q10 14 0 22 q-10-8 0-22z" fill="#6EC1EA"/><path d="M46 40 v50" stroke="#fff" stroke-width="2.4" opacity=".6" stroke-linecap="round"/></svg></div>
+<h3 class="mt-3 font-serif text-lg font-bold leading-snug text-toast-900">Agua</h3>
+<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-toast-700">Precio en barra</p>
+</article></div>
+</div>
+</section>
+<section id="encargos" class="bg-toast-900 py-14 text-cream-50 sm:py-16 lg:py-20">
+<div class="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:gap-14 lg:px-8">
+<div class="reveal space-y-6">
+<p class="text-xs font-bold uppercase tracking-[0.22em] text-amber-300">Encargos y pedidos</p>
+<h2 class="font-serif text-3xl font-extrabold leading-tight sm:text-4xl">Tu tortilla, lista para recoger</h2>
+<p class="leading-relaxed text-cream-200">Para cumpleaños, comidas con amigos o un día de playa: encarga tu tortilla entera o unos pinchos y pasa a recogerlos.</p>
+<ol class="space-y-4">
+<li class="flex gap-4"><span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-amber-300 font-extrabold text-toast-900">1</span><p><strong>Elige</strong> tus tortillas en la carta con los botones <em>+ Pincho</em> y <em>+ Entera</em>.</p></li>
+<li class="flex gap-4"><span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-amber-300 font-extrabold text-toast-900">2</span><p><strong>Indica</strong> tu nombre y cuándo pasarás a recogerlo.</p></li>
+<li class="flex gap-4"><span class="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-amber-300 font-extrabold text-toast-900">3</span><p><strong>Envíalo por WhatsApp</strong> y te confirmamos el total y la hora.</p></li>
+</ol>
+<p class="rounded-2xl bg-white/10 p-4 text-sm text-cream-200"><svg class="ic mr-1 inline h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-info"/></svg> El precio final puede variar ligeramente. Pedidos y recogida en horario del bar: lunes a sábado, de 8:00 a 14:00.</p>
+</div>
+<div class="reveal rounded-3xl bg-cream-50 p-5 text-toast-900 shadow-2xl sm:p-7">
+<div class="flex items-center justify-between gap-3"><h3 class="font-serif text-xl font-extrabold">Mi pedido</h3><button id="btn-vaciar" type="button" class="inline-flex min-h-[40px] items-center gap-1 rounded-full px-3 text-xs font-bold text-toast-700 hover:bg-cream-100"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-trash"/></svg> Vaciar</button></div>
+<p id="carrito-vacio" class="mt-4 rounded-2xl border-2 border-dashed border-toast-900/20 p-5 text-center text-sm text-toast-700">Todavía no has añadido nada. Ve a <a href="#carta" class="font-bold text-brand-700 underline">la carta</a> y pulsa <strong>+ Pincho</strong> o <strong>+ Entera</strong>.</p>
+<ul id="carrito-lista" class="mt-2 divide-y divide-toast-900/10"></ul>
+<div class="mt-3 flex items-center justify-between border-t-2 border-toast-900/15 pt-3"><span class="font-bold">Total aproximado</span><span id="carrito-total" class="text-xl font-extrabold">0,00 €</span></div>
+<div class="mt-4 grid gap-3 sm:grid-cols-2">
+<div class="sm:col-span-2"><label for="p-nombre" class="text-sm font-bold">Tu nombre</label><input id="p-nombre" type="text" autocomplete="given-name" class="mt-1 w-full rounded-xl border border-toast-900/20 bg-white p-3 text-base focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/30"></div>
+<div><label for="p-dia" class="text-sm font-bold">Día de recogida</label><select id="p-dia" class="mt-1 w-full rounded-xl border border-toast-900/20 bg-white p-3 text-base focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/30"></select></div>
+<div><label for="p-hora" class="text-sm font-bold">Hora</label><select id="p-hora" class="mt-1 w-full rounded-xl border border-toast-900/20 bg-white p-3 text-base focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/30"></select></div>
+<div class="sm:col-span-2"><label for="p-notas" class="text-sm font-bold">Alergias o notas <span class="font-normal text-toast-700">(opcional)</span></label><textarea id="p-notas" rows="2" class="mt-1 w-full rounded-xl border border-toast-900/20 bg-white p-3 text-base focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/30"></textarea></div>
+</div>
+<p id="p-aviso" class="mt-2 min-h-[1.25rem] text-sm font-semibold text-brand-700" role="status" aria-live="polite"></p>
+<button id="btn-pedido" type="button" disabled data-cta="whatsapp_pedido" class="mt-1 inline-flex min-h-[54px] w-full items-center justify-center gap-2 rounded-full bg-wa px-6 text-base font-extrabold text-white shadow-lg transition hover:bg-wa-dark focus:outline-none focus-visible:ring-4 focus-visible:ring-wa/40 disabled:cursor-not-allowed motion-reduce:transition-none"><svg class="icf h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg> Enviar pedido por WhatsApp</button>
+<p class="mt-3 text-center text-xs text-toast-700">Al pulsar se abre WhatsApp con tu pedido ya escrito. Más info en la <a href="#privacidad" data-legal="privacidad" class="underline">Política de Privacidad</a>.</p>
+</div>
+</div>
+</section>
+<section id="alergenos" class="py-14 sm:py-16">
+<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+<div class="reveal grid gap-8 rounded-3xl border border-toast-900/10 bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-[1fr_1.1fr]">
+<div>
+<p class="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">Alérgenos</p>
+<h2 class="mt-2 font-serif text-2xl font-extrabold sm:text-3xl">Información para tu tranquilidad</h2>
+<p class="mt-3 text-sm leading-relaxed text-toast-800">Todas nuestras tortillas se elaboran con huevo. En la tabla indicamos los alérgenos más evidentes según el nombre de cada variedad, a modo orientativo.</p>
+<p class="mt-3 flex gap-2 rounded-2xl bg-cream-100 p-4 text-sm font-semibold text-toast-900"><svg class="ic mt-0.5 h-4 w-4 flex-none text-brand-600" aria-hidden="true" focusable="false"><use href="#i-info"/></svg> Si tienes alguna alergia o intolerancia, consúltalo siempre con el personal antes de pedir: pueden existir trazas de otros alérgenos.</p>
+</div>
+<div class="overflow-x-auto"><table class="w-full"><caption class="sr-only">Alérgenos orientativos por tortilla</caption><tbody><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Tradicional con cebolla pochada</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Con Bonito y mayonesa</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-fish"/></svg>Pescado</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Jamón York y Queso fundido</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Queso de Cabra y Cebolla Caramelizada</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Chorizo a la sidra</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Espinacas y Queso Manchego</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-milk"/></svg>Lácteos</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Paisana (Verduras y Taco de Jamón)</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></td></tr><tr class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left text-sm font-semibold text-toast-900">Especial Castro (Rellena de Alioli y Lomo)</th><td class="py-2.5"><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 rounded-full bg-cream-100 px-2 py-0.5 text-[11px] font-semibold text-toast-800"><svg class="ic h-3 w-3" aria-hidden="true" focusable="false"><use href="#i-egg"/></svg>Huevo</span></div></td></tr></tbody></table></div>
+</div>
+</div>
+</section>
+<section id="ubicacion" class="bg-cream-100 py-14 sm:py-16 lg:py-20">
+<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+<div class="reveal mx-auto max-w-2xl text-center"><p class="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">Dónde estamos</p><h2 class="mt-2 font-serif text-3xl font-extrabold sm:text-4xl">Ubicación y contacto</h2></div>
+<div class="mt-10 grid gap-6 lg:grid-cols-2">
+<div class="reveal space-y-5 rounded-3xl bg-white p-6 shadow-sm sm:p-8">
+<ul class="space-y-5">
+<li class="flex gap-4"><span class="flex h-11 w-11 flex-none items-center justify-center rounded-2xl bg-cream-100 text-brand-600"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg></span><div><h3 class="font-bold">Dirección</h3><address class="not-italic text-toast-800">Plaza del Mercado<br>Castro Urdiales, Cantabria</address></div></li>
+<li class="flex gap-4"><span class="flex h-11 w-11 flex-none items-center justify-center rounded-2xl bg-cream-100 text-brand-600"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span><div class="w-full"><h3 class="font-bold">Horario</h3><p class="text-sm font-bold" data-estado-linea></p><table class="mt-2 w-full text-sm"><caption class="sr-only">Horario de apertura</caption><tbody><tr data-dia="1" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Lunes</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="2" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Martes</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="3" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Miércoles</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="4" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Jueves</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="5" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Viernes</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="6" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Sábado</th><td class="py-2.5 text-toast-800">08:00 – 14:00</td></tr><tr data-dia="0" class="border-t border-toast-900/10"><th scope="row" class="py-2.5 pr-3 text-left font-semibold">Domingo</th><td class="py-2.5 text-toast-800">Cerrado</td></tr></tbody></table></div></li>
+<li class="flex gap-4"><span class="flex h-11 w-11 flex-none items-center justify-center rounded-2xl bg-cream-100 text-brand-600"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span><div class="min-w-0"><h3 class="font-bold">Email</h3><a href="mailto:agencia39700@gmail.com" data-cta="email" class="break-all text-brand-700 underline underline-offset-2">agencia39700@gmail.com</a></div></li>
+</ul>
+<div class="flex flex-col gap-3 sm:flex-row">
+<a href="tel:+34628224719" data-cta="llamar" class="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full bg-toast-900 px-6 font-bold text-cream-50 transition hover:bg-toast-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-900/30 motion-reduce:transition-none sm:w-auto"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> Llamar al 628 22 47 19</a>
+<a href="https://www.google.com/maps/search/?api=1&query=Plaza+del+Mercado+Castro+Urdiales" target="_blank" rel="noopener" data-cta="como_llegar" class="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full border-2 border-toast-900 px-6 font-bold transition hover:bg-toast-900 hover:text-cream-50 focus:outline-none focus-visible:ring-4 focus-visible:ring-toast-900/30 motion-reduce:transition-none sm:w-auto"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-navigation"/></svg> Cómo llegar</a>
+</div>
+</div>
+<div class="reveal relative min-h-[340px] overflow-hidden rounded-3xl bg-white shadow-sm">
+<button type="button" data-mapa="Plaza del Mercado, Castro Urdiales" data-titulo="Mapa de Bar La Plaza, Plaza del Mercado, Castro Urdiales" class="group absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-cream-200 to-cream-100 p-6 text-center focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/40">
+<span class="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 text-white shadow-lg transition group-hover:scale-110 motion-reduce:transition-none"><svg class="ic h-8 w-8" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg></span>
+<span class="font-serif text-xl font-extrabold">Plaza del Mercado</span>
+<span class="rounded-full bg-white px-4 py-2 text-sm font-bold shadow">Ver mapa</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-toast-900 py-10 text-cream-200">
+<div class="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
+<p class="font-serif text-xl font-extrabold text-cream-50">Bar La Plaza</p>
+<p class="mt-1 text-sm">Plaza del Mercado, Castro Urdiales · <a href="tel:+34628224719" class="underline">628 22 47 19</a></p>
+<nav aria-label="Legal" class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs"><a href="#aviso-legal" data-legal="aviso" class="hover:text-white">Aviso legal</a><a href="#privacidad" data-legal="privacidad" class="hover:text-white">Privacidad</a><a href="#cookies" data-legal="cookies" class="hover:text-white">Cookies</a></nav>
+<p class="mt-4 text-xs text-cream-200/70">&copy; <span id="anio"></span> Bar La Plaza. Todos los derechos reservados.</p>
+</div>
+</footer>
+<button id="pill-pedido" type="button" onclick="document.getElementById('encargos').scrollIntoView({behavior:'smooth'})" class="fixed bottom-24 left-1/2 z-40 hidden -translate-x-1/2 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-toast-900 px-5 py-3 text-sm font-bold text-cream-50 shadow-2xl ring-2 ring-amber-300 focus:outline-none focus-visible:ring-4 md:bottom-6 md:left-auto md:right-6 md:translate-x-0"><svg class="ic h-4 w-4" aria-hidden="true" focusable="false"><use href="#i-bag"/></svg><span id="pill-texto"></span></button>
+<div class="fixed inset-x-0 bottom-0 z-50 flex gap-2 border-t border-toast-900/10 bg-cream-50/95 p-3 backdrop-blur md:hidden">
+<a href="tel:+34628224719" data-cta="llamar_barra" class="flex min-h-[46px] flex-1 items-center justify-center gap-2 rounded-full border-2 border-toast-900 font-bold"><svg class="ic h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> Llamar</a>
+<a href="https://wa.me/34628224719?text=Hola,%20quiero%20encargar%20una%20tortilla%20para%20llevar" target="_blank" rel="noopener" data-cta="whatsapp_barra" class="flex min-h-[46px] flex-1 items-center justify-center gap-2 rounded-full bg-wa font-bold text-white"><svg class="icf h-5 w-5" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+</div>
+<dialog id="dlg-aviso" aria-labelledby="t-aviso" class="w-[calc(100%-2rem)] max-w-3xl rounded-2xl border p-0 bg-cream-50 text-toast-900 border-toast-900/15">
+<div class="max-h-[85vh] overflow-y-auto p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4">
+<div><h2 id="t-aviso" class="text-2xl font-bold">Aviso Legal</h2><p class="mt-1 text-xs text-toast-800">Última actualización: 7 de octubre de 2026</p></div>
+<button type="button" data-close class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-toast-900/20 hover:border-toast-900" aria-label="Cerrar">&times;</button>
+</div>
+<h3 class="mt-6 font-semibold">1. Identificación del titular</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilitan los datos identificativos del titular de este sitio web:</p>
+<ul class="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-toast-800"><li>Titular: <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[NOMBRE O RAZÓN SOCIAL DEL TITULAR]</mark> (nombre comercial: Bar La Plaza)</li><li>NIF/CIF: <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[NIF/CIF PENDIENTE]</mark></li><li>Domicilio: Plaza del Mercado, Castro Urdiales (Cantabria), <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[LOCALIDAD Y CÓDIGO POSTAL]</mark></li><li>Correo electrónico: agencia39700@gmail.com</li><li>Teléfono: 628 22 47 19</li><li>Actividad: bar-cafetería especializado en pinchos y tortillas artesanales de patata.</li></ul>
+<h3 class="mt-6 font-semibold">2. Objeto y condiciones de uso</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Este sitio web tiene carácter informativo y comercial sobre la actividad de Bar La Plaza. El acceso es gratuito y el usuario se compromete a hacer un uso lícito y adecuado del mismo, sin realizar actividades contrarias a la ley, a la buena fe o al orden público, ni dañar, inutilizar o sobrecargar el sitio.</p>
+<h3 class="mt-6 font-semibold">3. Propiedad intelectual e industrial</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Los textos, diseños, ilustraciones, logotipos y código de este sitio son titularidad de Bar La Plaza o se usan con autorización, y están protegidos por la normativa de propiedad intelectual e industrial. Queda prohibida su reproducción, distribución o transformación sin autorización previa y por escrito. Las marcas de terceros mencionadas pertenecen a sus respectivos titulares y su mención no implica afiliación ni patrocinio.</p>
+<h3 class="mt-6 font-semibold">4. Responsabilidad</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">La información publicada (carta, precios, horarios, servicios) es orientativa y puede variar. El titular no garantiza la disponibilidad ininterrumpida del sitio ni la ausencia de errores, salvo que la ley no permita excluir esa responsabilidad. No se responsabiliza de los contenidos de sitios de terceros enlazados.</p>
+<h3 class="mt-6 font-semibold">5. Protección de datos y cookies</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">El tratamiento de datos personales se rige por la Política de Privacidad y el uso de cookies por la Política de Cookies, ambas disponibles en el pie de página.</p>
+<h3 class="mt-6 font-semibold">6. Legislación aplicable</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Este aviso se rige por la legislación española. Para cualquier controversia serán competentes los juzgados y tribunales que correspondan conforme a la ley, respetando el fuero imperativo aplicable a los consumidores y usuarios.</p>
+</div>
+</dialog>
+<dialog id="dlg-privacidad" aria-labelledby="t-priv" class="w-[calc(100%-2rem)] max-w-3xl rounded-2xl border p-0 bg-cream-50 text-toast-900 border-toast-900/15">
+<div class="max-h-[85vh] overflow-y-auto p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4">
+<div><h2 id="t-priv" class="text-2xl font-bold">Política de Privacidad</h2><p class="mt-1 text-xs text-toast-800">Última actualización: 7 de octubre de 2026</p></div>
+<button type="button" data-close class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-toast-900/20 hover:border-toast-900" aria-label="Cerrar">&times;</button>
+</div>
+<p class="mt-4 text-sm leading-relaxed text-toast-800">En cumplimiento del Reglamento (UE) 2016/679 (RGPD), de la Ley Orgánica 3/2018 (LOPDGDD) y de la LSSI-CE, te informamos de cómo tratamos tus datos personales cuando te pones en contacto con nosotros.</p>
+<h3 class="mt-6 font-semibold">1. Responsable del tratamiento</h3>
+<ul class="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-toast-800"><li>Titular: <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[NOMBRE O RAZÓN SOCIAL DEL TITULAR]</mark> (nombre comercial: Bar La Plaza)</li><li>NIF/CIF: <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[NIF/CIF PENDIENTE]</mark></li><li>Domicilio: Plaza del Mercado, Castro Urdiales (Cantabria), <mark class="rounded bg-brand-500/15 px-1 font-semibold text-brand-700">[LOCALIDAD Y CÓDIGO POSTAL]</mark></li><li>Correo electrónico: agencia39700@gmail.com</li><li>Teléfono: 628 22 47 19</li></ul>
+<h3 class="mt-6 font-semibold">2. Datos que tratamos</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Los que nos facilitas por WhatsApp, teléfono o correo electrónico: nombre, teléfono, el contenido de tu pedido o consulta, la hora de recogida y, si lo indicas voluntariamente, tus alergias o intolerancias. Los proveedores técnicos de alojamiento pueden tratar datos de conexión (como la IP) por seguridad y funcionamiento.</p>
+<h3 class="mt-6 font-semibold">3. Finalidad y base jurídica</h3>
+<ul class="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-toast-800"><li>Gestionar tus pedidos y encargos de tortillas y productos, y confirmarte el precio y la hora de recogida. Base jurídica: ejecución de medidas precontractuales y del contrato (art. 6.1.b RGPD).</li><li>Atender consultas y solicitudes. Base jurídica: tu consentimiento y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b RGPD).</li><li>Cumplir obligaciones legales, como las fiscales y contables, cuando haya una operación comercial (art. 6.1.c RGPD).</li><li>Comunicaciones comerciales: solo si las solicitas o das tu consentimiento previo y expreso (art. 21 LSSI-CE).</li><li>Si indicas alergias o intolerancias, las usamos únicamente para preparar tu pedido de forma segura; al facilitarlas nos das tu consentimiento explícito para ello (art. 9.2.a RGPD) y puedes retirarlo cuando quieras.</li></ul>
+<h3 class="mt-6 font-semibold">4. Plazo de conservación</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Conservamos los datos el tiempo necesario para atender tu solicitud y, después, bloqueados durante los plazos exigidos por la normativa aplicable. Pasados esos plazos, se suprimen.</p>
+<h3 class="mt-6 font-semibold">5. Destinatarios</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">No cedemos tus datos a terceros salvo obligación legal. Utilizamos proveedores necesarios para prestar el servicio, como Cloudflare (alojamiento del sitio web) y, si nos escribes por WhatsApp, Meta Platforms, que trata los datos según su propia política. Algunos proveedores pueden estar fuera del Espacio Económico Europeo; en ese caso, las transferencias se amparan en las garantías del RGPD (decisiones de adecuación o cláusulas contractuales tipo). Al pulsar «Ver mapa» se carga un mapa de Google, que puede recibir tu dirección IP.</p>
+<h3 class="mt-6 font-semibold">6. Tus derechos</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, y retirar tu consentimiento en cualquier momento, escribiendo a agencia39700@gmail.com e identificándote. Si consideras que no se han atendido correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+<h3 class="mt-6 font-semibold">7. Menores y veracidad</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Este sitio no está dirigido a menores de 14 años. Al facilitarnos datos garantizas que son veraces y, si son de terceros, que cuentas con su legitimación.</p>
+<h3 class="mt-6 font-semibold">8. Seguridad y actualizaciones</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Aplicamos medidas técnicas y organizativas razonables (como la conexión cifrada HTTPS). Podemos actualizar esta política; la versión vigente es la publicada en el sitio.</p>
+</div>
+</dialog>
+<dialog id="dlg-cookies" aria-labelledby="t-cook" class="w-[calc(100%-2rem)] max-w-3xl rounded-2xl border p-0 bg-cream-50 text-toast-900 border-toast-900/15">
+<div class="max-h-[85vh] overflow-y-auto p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4">
+<div><h2 id="t-cook" class="text-2xl font-bold">Política de Cookies</h2><p class="mt-1 text-xs text-toast-800">Última actualización: 7 de octubre de 2026</p></div>
+<button type="button" data-close class="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-toast-900/20 hover:border-toast-900" aria-label="Cerrar">&times;</button>
+</div>
+<p class="mt-4 text-sm leading-relaxed text-toast-800">Esta política cumple con el artículo 22.2 de la LSSI-CE y con la Guía sobre el uso de las cookies de la Agencia Española de Protección de Datos.</p>
+<h3 class="mt-6 font-semibold">1. ¿Qué son las cookies?</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Son pequeños archivos que un sitio web guarda en tu dispositivo para recordar información sobre tu visita.</p>
+<h3 class="mt-6 font-semibold">2. Cookies en este sitio</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Este sitio no instala cookies propias ni de terceros con fines analíticos, de personalización o publicitarios, por lo que no muestra banner de consentimiento. Los servicios de infraestructura pueden emplear mecanismos técnicos estrictamente necesarios para la seguridad y el funcionamiento, exentos de consentimiento conforme al artículo 22.2 de la LSSI-CE.</p>
+<h3 class="mt-6 font-semibold">3. Contenido de terceros</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">El mapa de Google solo se carga si pulsas «Ver mapa». En ese caso, Google puede tratar datos técnicos (como tu IP) y utilizar cookies según su política.</p>
+<h3 class="mt-6 font-semibold">4. Cómo gestionar o eliminar cookies</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Puedes permitir, bloquear o eliminar cookies desde la configuración de tu navegador (Chrome, Firefox, Safari, Edge, etc.).</p>
+<h3 class="mt-6 font-semibold">5. Cambios y contacto</h3>
+<p class="mt-2 text-sm leading-relaxed text-toast-800">Si en el futuro se incorporan herramientas que usen cookies no necesarias, actualizaremos esta política y pediremos tu consentimiento previo. Dudas: agencia39700@gmail.com.</p>
+</div>
+</dialog>
+<script>
+(function () {
+"use strict";
+var SLOTS = {"0": [], "1": [[480, 840]], "2": [[480, 840]], "3": [[480, 840]], "4": [[480, 840]], "5": [[480, 840]], "6": [[480, 840]]};
+var DIAS_EN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+var DIAS_ES = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+function hhmm(m) { return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0"); }
+function ahora() {
+var p = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", weekday: "short", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(new Date());
+var v = {}; p.forEach(function (x) { v[x.type] = x.value; });
+return { dia: DIAS_EN.indexOf(v.weekday), min: (parseInt(v.hour, 10) % 24) * 60 + parseInt(v.minute, 10), y: +v.year, m: +v.month, d: +v.day };
+}
+function calcularEstado() {
+var a = ahora(), i, j, s, sl = SLOTS[a.dia], cuando;
+for (j = 0; j < sl.length; j++) { s = sl[j]; if (a.min >= s[0] && a.min < s[1]) { return { abierto: true, texto: "Abierto ahora", detalle: "Abierto ahora · cierra a las " + hhmm(s[1]) }; } }
+for (i = 0; i < 7; i++) {
+var d = (a.dia + i) % 7; sl = SLOTS[d];
+for (j = 0; j < sl.length; j++) {
+s = sl[j];
+if (i > 0 || s[0] > a.min) {
+cuando = i === 0 ? "hoy" : (i === 1 ? "mañana" : "el " + DIAS_ES[d]);
+return { abierto: false, texto: "Cerrado", detalle: "Cerrado · abre " + cuando + " a las " + hhmm(s[0]) };
+}
+}
+}
+return { abierto: false, texto: "Cerrado", detalle: "Cerrado" };
+}
+function actualizarEstado() {
+var e = calcularEstado(), a = ahora();
+document.querySelectorAll("[data-estado]").forEach(function (el) {
+el.dataset.abierto = e.abierto ? "1" : "0";
+var t = el.querySelector("[data-estado-texto]"); if (t) { t.textContent = e.texto; }
+el.title = e.detalle;
+});
+document.querySelectorAll("[data-estado-linea]").forEach(function (el) { el.textContent = e.detalle; el.dataset.abierto = e.abierto ? "1" : "0"; });
+document.querySelectorAll("tr[data-dia]").forEach(function (tr) { tr.dataset.hoy = parseInt(tr.dataset.dia, 10) === a.dia ? "1" : "0"; });
+}
+/* Próximos días abiertos y horas disponibles (según el horario) */
+function proximosDias(n) {
+var a = ahora(), out = [], i = 0;
+var fmt = new Intl.DateTimeFormat("es-ES", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+while (out.length < n && i < 21) {
+var f = new Date(Date.UTC(a.y, a.m - 1, a.d + i)), dow = f.getUTCDay();
+if (SLOTS[dow].length) {
+var et = fmt.format(f); et = et.charAt(0).toUpperCase() + et.slice(1);
+out.push({ dow: dow, hoy: i === 0, etiqueta: (i === 0 ? "Hoy · " : (i === 1 ? "Mañana · " : "")) + et });
+}
+i++;
+}
+return out;
+}
+function horasDia(dow, hoy, paso, duracion) {
+var a = ahora(), res = [];
+SLOTS[dow].forEach(function (s) {
+for (var m = s[0]; m + duracion <= s[1]; m += paso) { if (!hoy || m > a.min + 10) { res.push(hhmm(m)); } }
+});
+return res;
+}
+function rellenarSelectDiaHora(selDia, selHora, paso, duracion) {
+var dias = proximosDias(7);
+selDia.innerHTML = "";
+dias.forEach(function (d, i) { var o = document.createElement("option"); o.value = i; o.textContent = d.etiqueta; selDia.appendChild(o); });
+function horas() {
+var d = dias[selDia.value]; selHora.innerHTML = "";
+var hs = horasDia(d.dow, d.hoy, paso, duracion);
+if (!hs.length) { var o0 = document.createElement("option"); o0.value = ""; o0.textContent = "Sin horas hoy; elige otro día"; selHora.appendChild(o0); return; }
+hs.forEach(function (h) { var o = document.createElement("option"); o.value = h; o.textContent = h; selHora.appendChild(o); });
+}
+selDia.addEventListener("change", horas); horas();
+return dias;
+}
+/* Mapa: se carga solo al pulsar (más rápido y más privado) */
+document.querySelectorAll("[data-mapa]").forEach(function (b) {
+b.addEventListener("click", function () {
+var f = document.createElement("iframe");
+f.src = "https://www.google.com/maps?q=" + encodeURIComponent(b.dataset.mapa) + "&output=embed";
+f.title = b.dataset.titulo || "Mapa"; f.loading = "lazy"; f.className = "h-full w-full border-0"; f.referrerPolicy = "no-referrer-when-downgrade";
+b.parentNode.replaceChild(f, b);
+});
+});
+/* Textos legales */
+var LEGALES = { aviso: "dlg-aviso", privacidad: "dlg-privacidad", cookies: "dlg-cookies" };
+document.querySelectorAll("[data-legal]").forEach(function (a) {
+a.addEventListener("click", function (e) {
+e.preventDefault();
+var d = document.getElementById(LEGALES[a.dataset.legal]);
+if (d && typeof d.showModal === "function") { document.documentElement.style.overflow = "hidden"; d.showModal(); }
+});
+});
+document.querySelectorAll("dialog").forEach(function (d) {
+d.addEventListener("click", function (e) { if (e.target === d) { d.close(); } });
+d.addEventListener("close", function () { document.documentElement.style.overflow = ""; });
+var x = d.querySelector("[data-close]"); if (x) { x.addEventListener("click", function () { d.close(); }); }
+});
+/* Menú móvil */
+var mbtn = document.getElementById("menu-btn"), menu = document.getElementById("menu-movil");
+function cerrarMenu() { menu.classList.add("hidden"); mbtn.setAttribute("aria-expanded", "false"); mbtn.setAttribute("aria-label", "Abrir menú"); }
+mbtn.addEventListener("click", function () {
+if (mbtn.getAttribute("aria-expanded") === "true") { cerrarMenu(); return; }
+menu.classList.remove("hidden"); mbtn.setAttribute("aria-expanded", "true"); mbtn.setAttribute("aria-label", "Cerrar menú");
+});
+menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", cerrarMenu); });
+document.addEventListener("keydown", function (e) { if (e.key === "Escape") { cerrarMenu(); } });
+/* Animación de entrada */
+var rv = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("is-visible"); io.unobserve(x.target); } }); }, { threshold: 0.12 });
+rv.forEach(function (el) { io.observe(el); });
+} else { rv.forEach(function (el) { el.classList.add("is-visible"); }); }
+document.getElementById("anio").textContent = new Date().getFullYear();
+actualizarEstado(); setInterval(actualizarEstado, 60000);
+/* Carta: pestañas */
+var tabs = Array.prototype.slice.call(document.querySelectorAll("[data-tab]"));
+var panels = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
+function mostrar(cat) {
+tabs.forEach(function (t) { t.setAttribute("aria-selected", t.dataset.tab === cat ? "true" : "false"); });
+panels.forEach(function (p) { var on = p.dataset.panel === cat; p.classList.toggle("hidden", !on); p.classList.toggle("grid", on); });
+}
+tabs.forEach(function (t, i) {
+t.addEventListener("click", function () { mostrar(t.dataset.tab); });
+t.addEventListener("keydown", function (e) {
+var j = null; if (e.key === "ArrowRight") { j = (i + 1) % tabs.length; } if (e.key === "ArrowLeft") { j = (i - 1 + tabs.length) % tabs.length; }
+if (j !== null) { e.preventDefault(); tabs[j].focus(); mostrar(tabs[j].dataset.tab); }
+});
+});
+panels.forEach(function (p) { p.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); }); });
+/* Pedido por WhatsApp */
+var WA_NUM = "34628224719";
+var eur = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
+var cart = {};
+var lista = document.getElementById("carrito-lista"), vacio = document.getElementById("carrito-vacio");
+var totalEl = document.getElementById("carrito-total"), pill = document.getElementById("pill-pedido"), pillTxt = document.getElementById("pill-texto");
+var btnEnviar = document.getElementById("btn-pedido");
+var hayPedido = false, verEncargos = false;
+function actualizarPill() { var mostrar = hayPedido && !verEncargos; pill.classList.toggle("hidden", !mostrar); pill.classList.toggle("flex", mostrar); }
+if ("IntersectionObserver" in window) { new IntersectionObserver(function (en) { verEncargos = en[0].isIntersecting; actualizarPill(); }, { threshold: 0.15 }).observe(document.getElementById("encargos")); }
+function render() {
+var ids = Object.keys(cart), n = 0, total = 0;
+lista.innerHTML = "";
+ids.forEach(function (id) {
+var it = cart[id]; n += it.qty; total += it.qty * it.precio;
+var li = document.createElement("li");
+li.className = "flex items-center justify-between gap-3 py-2.5";
+li.innerHTML = '<div class="min-w-0"><p class="truncate text-sm font-semibold"></p><p class="text-xs text-toast-700"></p></div>' +
+'<div class="flex flex-none items-center gap-1"><button type="button" data-menos="' + id + '" class="flex h-9 w-9 items-center justify-center rounded-full border border-toast-900/20 font-bold hover:bg-cream-100" aria-label="Quitar uno">−</button>' +
+'<span class="w-6 text-center text-sm font-bold">' + it.qty + '</span>' +
+'<button type="button" data-mas="' + id + '" class="flex h-9 w-9 items-center justify-center rounded-full border border-toast-900/20 font-bold hover:bg-cream-100" aria-label="Añadir uno">+</button></div>';
+li.querySelector("p").textContent = it.nombre;
+li.querySelectorAll("p")[1].textContent = (it.tipo === "entera" ? "Entera" : "Pincho") + " · " + eur.format(it.precio);
+lista.appendChild(li);
+});
+vacio.classList.toggle("hidden", ids.length > 0);
+totalEl.textContent = eur.format(total);
+btnEnviar.disabled = ids.length === 0;
+btnEnviar.classList.toggle("opacity-50", ids.length === 0);
+hayPedido = ids.length > 0; actualizarPill();
+pillTxt.textContent = "Mi pedido · " + n + (n === 1 ? " producto" : " productos") + " · " + eur.format(total);
+}
+document.querySelectorAll("[data-add]").forEach(function (b) {
+b.addEventListener("click", function () {
+var id = b.dataset.id;
+if (!cart[id]) { cart[id] = { nombre: b.dataset.nombre, tipo: b.dataset.tipo, precio: parseFloat(b.dataset.precio), qty: 0 }; }
+cart[id].qty++; render();
+b.classList.add("animate-ping-once"); setTimeout(function () { b.classList.remove("animate-ping-once"); }, 300);
+});
+});
+lista.addEventListener("click", function (e) {
+var m = e.target.closest("[data-menos]"), p = e.target.closest("[data-mas]");
+if (m) { var id = m.dataset.menos; cart[id].qty--; if (cart[id].qty <= 0) { delete cart[id]; } render(); }
+if (p) { cart[p.dataset.mas].qty++; render(); }
+});
+document.getElementById("btn-vaciar").addEventListener("click", function () { cart = {}; render(); });
+var selDia = document.getElementById("p-dia"), selHora = document.getElementById("p-hora");
+var dias = rellenarSelectDiaHora(selDia, selHora, 30, 30);
+btnEnviar.addEventListener("click", function () {
+var nombre = document.getElementById("p-nombre").value.trim();
+if (!nombre) { document.getElementById("p-nombre").focus(); document.getElementById("p-aviso").textContent = "Dinos tu nombre para el pedido."; return; }
+document.getElementById("p-aviso").textContent = "";
+var lineas = [], total = 0;
+Object.keys(cart).forEach(function (id) { var it = cart[id]; total += it.qty * it.precio; lineas.push("- " + it.qty + " x " + it.nombre + " (" + (it.tipo === "entera" ? "entera" : "pincho") + ")"); });
+var d = dias[selDia.value];
+var notas = document.getElementById("p-notas").value.trim();
+var txt = "Hola, quiero hacer un pedido:\n" + lineas.join("\n") + "\n\nNombre: " + nombre + "\nRecogida: " + d.etiqueta + (selHora.value ? " a las " + selHora.value : "") +
+(notas ? "\nAlergias o notas: " + notas : "") + "\nTotal aproximado: " + eur.format(total) + "\n¿Me confirmáis el total y la hora? Gracias.";
+window.open("https://wa.me/" + WA_NUM + "?text=" + encodeURIComponent(txt), "_blank", "noopener");
+});
+render();
+})();
+</script>
 </body>
 </html>
